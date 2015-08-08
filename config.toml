@@ -1,4 +1,4 @@
-baseurl = "http://hpcloud-mon.github.io/public"
+baseurl = "http://monasca..io/"
 languageCode = "en-us"
 title = "Monasca"
 canonifyurls = "True"
