@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Monasca</title>
-    <link>http://monasca.io/</link>
+    <link>http://hpcloud-mon.github.io/</link>
     <description>Recent content on Monasca</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Aug 2015 18:32:00 -0600</lastBuildDate>
-    <atom:link href="http://monasca.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://hpcloud-mon.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>about</title>
-      <link>http://monasca.io/about/</link>
+      <link>http://hpcloud-mon.github.io/about/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://monasca.io/about/</guid>
+      <guid>http://hpcloud-mon.github.io/about/</guid>
       <description>&lt;p&gt;To provide a multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution for metrics, complex event processing and logging. To build an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.&lt;/p&gt;
 </description>
     </item>
