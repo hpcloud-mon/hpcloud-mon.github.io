@@ -1,0 +1,9 @@
+baseurl = "http://monasca.io/"
+languageCode = "en-us"
+title = "Monasca"
+canonifyurls = "True"
+theme = "material-design"
+
+[params]
+  description = "Monitoring-as-a-Service (at-Scale)"
+  author = "Dr. Monasca"
