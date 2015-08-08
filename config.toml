@@ -1,7 +1,6 @@
 baseurl = "http://monasca.io/"
 languageCode = "en-us"
 title = "Monasca"
-canonifyurls = "True"
 theme = "material-design"
 
 [params]
