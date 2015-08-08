@@ -1,4 +1,4 @@
-baseurl = "http://hpcloud-mon.github.io"
+baseurl = "http://hpcloud-mon.github.io/public"
 languageCode = "en-us"
 title = "Monasca"
 theme = "material-design"
