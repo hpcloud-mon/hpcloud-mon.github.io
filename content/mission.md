@@ -5,4 +5,4 @@ draft = false
 title = "mission"
 +++
 
-Provide an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution for metrics, complex event processing and logging. <!--more--> Build an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.
+To provide an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution for metrics, complex event processing and logging. <!--more--> To build an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.
