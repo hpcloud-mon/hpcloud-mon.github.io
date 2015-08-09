@@ -7,6 +7,6 @@ title = "coming soon"
 
 Stop, that's enough. You're killing me. Monasca will be adding support for the following: <!--more-->
 
-* Logging: In the style of Loggly, support for an authenticated multi-tenant logging solution is in progress.
-* Complex Event Processing: 
-* Cassandra 
+1. Logging: In the style of Loggly, support for an authenticated multi-tenant logging solution is in progress.
+2. Complex Event Processing: 
+3. Cassandra 

@@ -7,12 +7,12 @@ title = "technologies"
 
 Monasca is built on several open-source technololgies: <!--more-->
 
-* Kafka
-* Apache Storm
-* ZooKeeper
-* InfluxDB
-* MySQL
+1. Kafka
+2. Apache Storm
+3. ZooKeeper
+4. InfluxDB
+5. MySQL
 
 In addition, Monasca optionally supports the following:
 
-* Vertica
+1. Vertica

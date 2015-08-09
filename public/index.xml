@@ -16,20 +16,22 @@
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
       <guid>http://hpcloud-mon.github.io/public/about/</guid>
-      <description>&lt;p&gt;Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution for metrics, complex event processing and logging.  Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.&lt;/p&gt;
+      <description>
 
-&lt;p&gt;Monasca is a micro-services message bus based architecture.&lt;/p&gt;
+&lt;p&gt;Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution for metrics, complex event processing and logging.  Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.&lt;/p&gt;
 
-&lt;p&gt;Companies invovled with developing and deploying Monasca include the following:&lt;/p&gt;
+&lt;h5 id=&#34;who-is-involved:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;who is involved?&lt;/h5&gt;
 
-&lt;ul&gt;
+&lt;p&gt;Companies involved with developing and/or deploying Monasca include the following:&lt;/p&gt;
+
+&lt;ol&gt;
 &lt;li&gt;Hewlett-Packard&lt;/li&gt;
 &lt;li&gt;Time Warner Cable (TWC)&lt;/li&gt;
 &lt;li&gt;Fujitsu&lt;/li&gt;
 &lt;li&gt;Cisco&lt;/li&gt;
 &lt;li&gt;Cray&lt;/li&gt;
 &lt;li&gt;Rackspace&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
@@ -51,13 +53,13 @@
       <guid>http://hpcloud-mon.github.io/public/metrics/</guid>
       <description>&lt;p&gt;Provides an API for real-time storage and retrieval of metrics and statistics.  Supports the following:&lt;/p&gt;
 
-&lt;ul&gt;
+&lt;ol&gt;
 &lt;li&gt;Storage and retrieval of metrics.&lt;/li&gt;
 &lt;li&gt;Query statistics about metrics such as average, min, max, sum and count over time ranges and periods.&lt;/li&gt;
 &lt;li&gt;Multi-dimensional representation based on dimensions, (key, value) pairs to that data can be easily sliced and diced.&lt;/li&gt;
 &lt;li&gt;Millisecond resolution.&lt;/li&gt;
 &lt;li&gt;Meta data associated with metrics can be used to provide additional about metrics such as http status codes and error messages.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
@@ -81,21 +83,23 @@
 
 &lt;p&gt;Support the following type of notification methods:&lt;/p&gt;
 
-&lt;ul&gt;
+&lt;ol&gt;
 &lt;li&gt;Email&lt;/li&gt;
 &lt;li&gt;PagerDuty&lt;/li&gt;
 &lt;li&gt;Webhooks&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
     <item>
-      <title>misc</title>
-      <link>http://hpcloud-mon.github.io/public/misc/</link>
+      <title>architecture</title>
+      <link>http://hpcloud-mon.github.io/public/architecture/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://hpcloud-mon.github.io/public/misc/</guid>
-      <description>&lt;p&gt;Highly performant, scalable, fault-tolerant and extensible&lt;/p&gt;
+      <guid>http://hpcloud-mon.github.io/public/architecture/</guid>
+      <description>&lt;p&gt;Monasca is a highly performant, scalable, fault-tolerant and extensible micro-services messages bus based architecture.&lt;/p&gt;
+
+&lt;p&gt;More details will be coming soon.&lt;/p&gt;
 </description>
     </item>
     
@@ -107,19 +111,19 @@
       <guid>http://hpcloud-mon.github.io/public/technologies/</guid>
       <description>&lt;p&gt;Monasca is built on several open-source technololgies:&lt;/p&gt;
 
-&lt;ul&gt;
+&lt;ol&gt;
 &lt;li&gt;Kafka&lt;/li&gt;
 &lt;li&gt;Apache Storm&lt;/li&gt;
 &lt;li&gt;ZooKeeper&lt;/li&gt;
 &lt;li&gt;InfluxDB&lt;/li&gt;
 &lt;li&gt;MySQL&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;In addition, Monasca optionally supports the following:&lt;/p&gt;
 
-&lt;ul&gt;
+&lt;ol&gt;
 &lt;li&gt;Vertica&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
@@ -131,11 +135,11 @@
       <guid>http://hpcloud-mon.github.io/public/coming-soon/</guid>
       <description>&lt;p&gt;Stop, that&amp;rsquo;s enough. You&amp;rsquo;re killing me. Monasca will be adding support for the following:&lt;/p&gt;
 
-&lt;ul&gt;
+&lt;ol&gt;
 &lt;li&gt;Logging: In the style of Loggly, support for an authenticated multi-tenant logging solution is in progress.&lt;/li&gt;
 &lt;li&gt;Complex Event Processing:&lt;/li&gt;
 &lt;li&gt;Cassandra&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
 </description>
     </item>
     

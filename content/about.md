@@ -7,13 +7,13 @@ title = "about"
 
 Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution for metrics, complex event processing and logging. <!--more--> Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.
 
-Monasca is a micro-services message bus based architecture.
+##### who is involved?
 
-Companies invovled with developing and deploying Monasca include the following:
+Companies involved with developing and/or deploying Monasca include the following:
 
-  * Hewlett-Packard
-  * Time Warner Cable (TWC)
-  * Fujitsu
-  * Cisco
-  * Cray
-  * Rackspace
+  1. Hewlett-Packard
+  2. Time Warner Cable (TWC)
+  3. Fujitsu
+  4. Cisco
+  5. Cray
+  6. Rackspace
