@@ -1,7 +1,7 @@
 baseurl = "http://hpcloud-mon.github.io/public"
 languageCode = "en-us"
 title = "Monasca"
-theme = "material-design"
+theme = "default"
 copyright = "© 2015 Hewlett-Packard"
 
 [params]

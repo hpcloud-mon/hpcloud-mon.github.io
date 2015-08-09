@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Monasca</title>
-    <link>http://localhost:1313/public/</link>
+    <link>http://hpcloud-mon.github.io/public/</link>
     <description>Recent content on Monasca</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2015 Hewlett-Packard</copyright>
     <lastBuildDate>Fri, 07 Aug 2015 18:32:00 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/public/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://hpcloud-mon.github.io/public/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>mission</title>
-      <link>http://localhost:1313/public/mission/</link>
+      <link>http://hpcloud-mon.github.io/public/mission/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://localhost:1313/public/mission/</guid>
+      <guid>http://hpcloud-mon.github.io/public/mission/</guid>
       <description>&lt;p&gt;Provide an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution for metrics, complex event processing and logging.  Build an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>api</title>
-      <link>http://localhost:1313/public/api/</link>
+      <link>http://hpcloud-mon.github.io/public/api/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://localhost:1313/public/api/</guid>
+      <guid>http://hpcloud-mon.github.io/public/api/</guid>
       <description>&lt;p&gt;Built on a first-class RESTful API that provides authentication and multi-tenancy.  Monasca integrates with the OpenStack Keystone Identity service.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>metrics</title>
-      <link>http://localhost:1313/public/metrics/</link>
+      <link>http://hpcloud-mon.github.io/public/metrics/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://localhost:1313/public/metrics/</guid>
+      <guid>http://hpcloud-mon.github.io/public/metrics/</guid>
       <description>&lt;p&gt;Provides and API for real-time storage and retrieval of metrics and statistics.  Supports the following:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -50,20 +50,20 @@
     
     <item>
       <title>alarms</title>
-      <link>http://localhost:1313/public/alarms/</link>
+      <link>http://hpcloud-mon.github.io/public/alarms/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://localhost:1313/public/alarms/</guid>
+      <guid>http://hpcloud-mon.github.io/public/alarms/</guid>
       <description>&lt;p&gt;A real-time in-memory streaming thresholding engine capable of processing hundreds of thousands of metrics.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>notifications</title>
-      <link>http://localhost:1313/public/notifications/</link>
+      <link>http://hpcloud-mon.github.io/public/notifications/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://localhost:1313/public/notifications/</guid>
+      <guid>http://hpcloud-mon.github.io/public/notifications/</guid>
       <description>&lt;p&gt;Notifications can be sent when alarm state transition occurs.  Monasca supports and integrated notification engine that allows notification methods to be created, such as email contacts, and associated with alarms. When alarm state transitions occur notifications can be sent to specified contacts and services.&lt;/p&gt;
 
 &lt;p&gt;Support the following type of notification methods:&lt;/p&gt;
@@ -78,10 +78,10 @@
     
     <item>
       <title>misc</title>
-      <link>http://localhost:1313/public/misc/</link>
+      <link>http://hpcloud-mon.github.io/public/misc/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://localhost:1313/public/misc/</guid>
+      <guid>http://hpcloud-mon.github.io/public/misc/</guid>
       <description>&lt;p&gt;Highly performant, scalable, fault-tolerant and extensible&lt;/p&gt;
 </description>
     </item>
