@@ -58,6 +58,20 @@
            
           </p>
           <p><p>The <a href="https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md">Monasca API</a> is built on a first-class RESTful API that provides authentication and multi-tenancy.  Monasca integrates with the OpenStack Keystone Identity service.</p>
+
+<p>Monasca supports the following main resources in the API:</p>
+
+<ol>
+<li>GET /v2.0/versions: Supplies operations for accessing information about supported versions of the API.</li>
+<li>GET, POST /v2.0/metrics: Allows metrics to be created and queried.</li>
+<li>GET /v2.0/metrics/names: Operations for accessing names of metrics.</li>
+<li>GET /v2.0/metrics/measurements: Operations for accessing measurements of metrics.</li>
+<li>GET /v2.0/metrics/statistics: Operations for calculating statistics of metrics</li>
+<li>GET, POST, PUT, PATH, DELETE /v2.0/alarm-definitions: Operations for working with alarm definitions.</li>
+<li>GET, PUT, DELETE /v2.0/alarms: Operations for working with alarms.</li>
+<li>GET /v2.0/alarms/state-history: List alarm state history for alarms.</li>
+<li>GET, POST, PUT, DELETE /v2.0/notification-methods: Operations for working with notification methods.</li>
+</ol>
 </p>
           <p>
             

@@ -17,3 +17,19 @@ Companies involved with developing and/or deploying Monasca include the followin
   4. Cisco
   5. Cray
   6. Rackspace
+
+##### technologies
+
+Monasca is written in both Java and Python. Several of the componenent in Monasca started out in Java. However, the go-forward language for Monasca is Python.
+
+Monasca is built on several open-source technololgies including: <!--more-->
+
+1. Kafka
+2. Apache Storm
+3. ZooKeeper
+4. InfluxDB
+5. MySQL
+
+In addition, Monasca optionally supports the following:
+
+1. Vertica
