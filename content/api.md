@@ -5,4 +5,4 @@ draft = false
 title = "api"
 +++
 
-Built on a first-class RESTful API that provides authentication and multi-tenancy. <!--more--> Monasca integrates with the OpenStack Keystone Identity service.
+The [Monasca API](https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md) is built on a first-class RESTful API that provides authentication and multi-tenancy. <!--more--> Monasca integrates with the OpenStack Keystone Identity service. 

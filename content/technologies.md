@@ -5,10 +5,14 @@ draft = false
 title = "technologies"
 +++
 
-Built on several technololgies: <!--more-->
+Monasca is built on several open-source technololgies: <!--more-->
 
 * Kafka
 * Apache Storm
 * ZooKeeper
 * InfluxDB
+* MySQL
+
+In addition, Monasca optionally supports the following:
+
 * Vertica

@@ -5,9 +5,9 @@ draft = false
 title = "metrics"
 +++
 
-Provides and API for real-time storage and retrieval of metrics and statistics. <!--more--> Supports the following:
+Provides an API for real-time storage and retrieval of metrics and statistics. <!--more--> Supports the following:
 
-* Store and query metrics.
+* Storage and retrieval of metrics.
 * Query statistics about metrics such as average, min, max, sum and count over time ranges and periods.
 * Multi-dimensional representation based on dimensions, (key, value) pairs to that data can be easily sliced and diced.
 * Millisecond resolution.
