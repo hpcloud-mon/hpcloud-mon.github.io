@@ -1,9 +1,0 @@
-baseurl = "http://hpcloud-mon.github.io/public"
-languageCode = "en-us"
-title = "Monasca"
-theme = "default"
-copyright = "© 2015 Hewlett-Packard"
-
-[params]
-  description = "Monitoring-as-a-Service (at-Scale)"
-  author = "Dr. Monasca"
