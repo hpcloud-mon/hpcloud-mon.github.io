@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debugging on Monasca</title>
+    <link>http://monasca.io/categories/debugging/</link>
+    <description>Recent content in Debugging on Monasca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2015 Hewlett-Packard</copyright>
+    <lastBuildDate>Fri, 14 Aug 2015 16:42:17 -0600</lastBuildDate>
+    <atom:link href="http://monasca.io/categories/debugging/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Monitoring of Monitoring</title>
+      <link>http://monasca.io/operations/mom/</link>
+      <pubDate>Fri, 14 Aug 2015 16:42:17 -0600</pubDate>
+      
+      <guid>http://monasca.io/operations/mom/</guid>
+      <description>&lt;p&gt;Monasca itself needs to be monitored and is fully capable of monitoring itself.  In non-production installations this can be done by the agent running on the Monasca boxes reporting back to the Monasca API. For production installations I recommend that the agent running on the Monasca nodes report to another installation of Monasca possibly a single vm &amp;lsquo;mini-mon&amp;rsquo; which is itself monitored by the primary installation, this avoids dependency loops.&lt;/p&gt;
+
+&lt;p&gt;As components of Monasca are developed metrics for the monitoring of that component need to be added as well as alarm definitions and finally default graphs to view the metrics. The most basic metrics are used in simple up/down alarms and more advanced used for thresholds and graphs aiding in predictive failure and capacity planning.&lt;/p&gt;
+
+&lt;p&gt;Here are the MoM alarms broken down by component, the exact alarms can be found at &lt;a href=&#34;https://github.com/hpcloud-mon/ansible-monasca-default-alarms/blob/master/tasks/monasca.yml&#34;&gt;https://github.com/hpcloud-mon/ansible-monasca-default-alarms/blob/master/tasks/monasca.yml&lt;/a&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Component&lt;/th&gt;
+&lt;th&gt;Alarm&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;zookeeper&lt;/td&gt;
+&lt;td&gt;pid check, average latency, zookeeper connections_count&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;kafka&lt;/td&gt;
+&lt;td&gt;pid check, consumer lag&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;mysql&lt;/td&gt;
+&lt;td&gt;pid check, slow queries&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;notification&lt;/td&gt;
+&lt;td&gt;pid check, config db time, email time&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;thresh/storm&lt;/td&gt;
+&lt;td&gt;pid check of nimbus, supervisor and workers&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Agent&lt;/td&gt;
+&lt;td&gt;emit time, collection time&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Persister&lt;/td&gt;
+&lt;td&gt;For the Java version a healthcheck on the admin url&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;API&lt;/td&gt;
+&lt;td&gt;For the Java version a healthcheck on the admin url&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Log and Configuration Locations</title>
+      <link>http://monasca.io/operations/logs/</link>
+      <pubDate>Fri, 14 Aug 2015 16:27:56 -0600</pubDate>
+      
+      <guid>http://monasca.io/operations/logs/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Monasca Components&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;All monasca components have their configuration in &lt;code&gt;/etc/monasca&lt;/code&gt; and their log files in &lt;code&gt;/var/log/monasca&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;/var/log/monasca/agent/collector.log&lt;/li&gt;
+&lt;li&gt;/var/log/monasca/agent/statsd.log&lt;/li&gt;
+&lt;li&gt;/var/log/monasca/agent/supervisord.log&lt;/li&gt;
+&lt;li&gt;/var/log/monasca/agent/forwarder.log&lt;/li&gt;
+&lt;li&gt;/var/log/monasca/api/monasca-api.log&lt;/li&gt;
+&lt;li&gt;/var/log/monasca/api/request.log&lt;/li&gt;
+&lt;li&gt;/var/log/monasca/notification/notification.log&lt;/li&gt;
+&lt;li&gt;/var/log/monasca/persister/monasca-persister.log&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;3rd Party Monasca Dependencies&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The 3rd party Monasca dependencies can put there logs where ever they desire but here are the common locations:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;/var/log/influxdb/influxd.log&lt;/li&gt;
+&lt;li&gt;/var/log/kafka/controller.log&lt;/li&gt;
+&lt;li&gt;/var/log/kafka/server.log&lt;/li&gt;
+&lt;li&gt;/var/log/kafka/state-change.log&lt;/li&gt;
+&lt;li&gt;/var/log/mysql/error.log&lt;/li&gt;
+&lt;li&gt;/var/log/storm/nimbus.log&lt;/li&gt;
+&lt;li&gt;/var/log/storm/supervisor.log&lt;/li&gt;
+&lt;li&gt;/var/log/zookeeper/zookeeper.log&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

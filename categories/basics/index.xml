@@ -12,10 +12,10 @@
     
     <item>
       <title>about</title>
-      <link>http://monasca.io/about/</link>
+      <link>http://monasca.io/root/about/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://monasca.io/about/</guid>
+      <guid>http://monasca.io/root/about/</guid>
       <description>
 
 &lt;p&gt;Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution for metrics, complex event processing and logging.  Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.&lt;/p&gt;
@@ -57,10 +57,10 @@
     
     <item>
       <title>agent</title>
-      <link>http://monasca.io/agent/</link>
+      <link>http://monasca.io/root/agent/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://monasca.io/agent/</guid>
+      <guid>http://monasca.io/root/agent/</guid>
       <description>&lt;p&gt;Monasca supports an optional monitoring agent that is written in Python.  The agent supports the following checks and metrics:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -75,20 +75,20 @@
     
     <item>
       <title>alarms</title>
-      <link>http://monasca.io/alarms/</link>
+      <link>http://monasca.io/root/alarms/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://monasca.io/alarms/</guid>
+      <guid>http://monasca.io/root/alarms/</guid>
       <description>&lt;p&gt;A real-time in-memory streaming thresholding engine capable of processing hundreds of thousands of metrics.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>api</title>
-      <link>http://monasca.io/api/</link>
+      <link>http://monasca.io/root/api/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://monasca.io/api/</guid>
+      <guid>http://monasca.io/root/api/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md&#34;&gt;Monasca API&lt;/a&gt; is built on a first-class RESTful API that provides authentication and multi-tenancy.  Monasca integrates with the OpenStack Keystone Identity service.&lt;/p&gt;
 
 &lt;p&gt;Monasca supports the following main resources in the API:&lt;/p&gt;
@@ -109,10 +109,10 @@
     
     <item>
       <title>architecture</title>
-      <link>http://monasca.io/architecture/</link>
+      <link>http://monasca.io/root/architecture/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://monasca.io/architecture/</guid>
+      <guid>http://monasca.io/root/architecture/</guid>
       <description>&lt;p&gt;Monasca is a highly performant, scalable, fault-tolerant and extensible micro-services messages bus based architecture.&lt;/p&gt;
 
 &lt;p&gt;More details will be coming soon.&lt;/p&gt;
@@ -121,10 +121,10 @@
     
     <item>
       <title>coming soon</title>
-      <link>http://monasca.io/coming-soon/</link>
+      <link>http://monasca.io/root/coming-soon/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://monasca.io/coming-soon/</guid>
+      <guid>http://monasca.io/root/coming-soon/</guid>
       <description>&lt;p&gt;Stop, that&amp;rsquo;s enough. You&amp;rsquo;re killing me. Monasca will be adding support for the following:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -138,20 +138,20 @@
     
     <item>
       <title>develop &amp; deploy</title>
-      <link>http://monasca.io/develop-deploy/</link>
+      <link>http://monasca.io/root/develop-deploy/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://monasca.io/develop-deploy/</guid>
+      <guid>http://monasca.io/root/develop-deploy/</guid>
       <description>&lt;p&gt;Want to learn how to develop for Monasca or just deploy Stay-tuned&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>metrics</title>
-      <link>http://monasca.io/metrics/</link>
+      <link>http://monasca.io/root/metrics/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://monasca.io/metrics/</guid>
+      <guid>http://monasca.io/root/metrics/</guid>
       <description>
 
 &lt;p&gt;Provides an API for real-time storage and retrieval of metrics and statistics.  The main features of metrics are as follows:&lt;/p&gt;
@@ -202,10 +202,10 @@
     
     <item>
       <title>notifications</title>
-      <link>http://monasca.io/notifications/</link>
+      <link>http://monasca.io/root/notifications/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
-      <guid>http://monasca.io/notifications/</guid>
+      <guid>http://monasca.io/root/notifications/</guid>
       <description>&lt;p&gt;Notifications can be sent when alarm state transition occurs.  Monasca supports and integrated notification engine that allows notification methods to be created, such as email contacts, and associated with alarms. When alarm state transitions occur notifications can be sent to specified contacts and services.&lt;/p&gt;
 
 &lt;p&gt;Support the following type of notification methods:&lt;/p&gt;

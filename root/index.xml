@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Roots on Monasca</title>
+    <link>http://monasca.io/root/</link>
+    <description>Recent content in Roots on Monasca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2015 Hewlett-Packard</copyright>
+    <lastBuildDate>Fri, 07 Aug 2015 18:32:00 -0600</lastBuildDate>
+    <atom:link href="http://monasca.io/root/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>http://monasca.io/root/about/</link>
+      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
+      
+      <guid>http://monasca.io/root/about/</guid>
+      <description>
+
+&lt;p&gt;Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution for metrics, complex event processing and logging.  Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.&lt;/p&gt;
+
+&lt;h5 id=&#34;who-is-involved:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Who is involved?&lt;/h5&gt;
+
+&lt;p&gt;Companies involved with developing and/or deploying Monasca include the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hewlett-Packard&lt;/li&gt;
+&lt;li&gt;Time Warner Cable (TWC)&lt;/li&gt;
+&lt;li&gt;Fujitsu&lt;/li&gt;
+&lt;li&gt;Cisco&lt;/li&gt;
+&lt;li&gt;Cray&lt;/li&gt;
+&lt;li&gt;Rackspace&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;technologies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Technologies&lt;/h5&gt;
+
+&lt;p&gt;Monasca is written in both Java and Python. Several of the componenent in Monasca started out in Java. However, the go-forward language for Monasca is Python.&lt;/p&gt;
+
+&lt;p&gt;Monasca is built on several open-source technololgies including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Kafka&lt;/li&gt;
+&lt;li&gt;Apache Storm&lt;/li&gt;
+&lt;li&gt;ZooKeeper&lt;/li&gt;
+&lt;li&gt;InfluxDB&lt;/li&gt;
+&lt;li&gt;MySQL&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In addition, Monasca optionally supports the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Vertica&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>api</title>
+      <link>http://monasca.io/root/api/</link>
+      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
+      
+      <guid>http://monasca.io/root/api/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md&#34;&gt;Monasca API&lt;/a&gt; is built on a first-class RESTful API that provides authentication and multi-tenancy.  Monasca integrates with the OpenStack Keystone Identity service.&lt;/p&gt;
+
+&lt;p&gt;Monasca supports the following main resources in the API:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GET /v2.0/versions: Supplies operations for accessing information about supported versions of the API.&lt;/li&gt;
+&lt;li&gt;GET, POST /v2.0/metrics: Allows metrics to be created and queried.&lt;/li&gt;
+&lt;li&gt;GET /v2.0/metrics/names: Operations for accessing names of metrics.&lt;/li&gt;
+&lt;li&gt;GET /v2.0/metrics/measurements: Operations for accessing measurements of metrics.&lt;/li&gt;
+&lt;li&gt;GET /v2.0/metrics/statistics: Operations for calculating statistics of metrics&lt;/li&gt;
+&lt;li&gt;GET, POST, PUT, PATH, DELETE /v2.0/alarm-definitions: Operations for working with alarm definitions.&lt;/li&gt;
+&lt;li&gt;GET, PUT, DELETE /v2.0/alarms: Operations for working with alarms.&lt;/li&gt;
+&lt;li&gt;GET /v2.0/alarms/state-history: List alarm state history for alarms.&lt;/li&gt;
+&lt;li&gt;GET, POST, PUT, DELETE /v2.0/notification-methods: Operations for working with notification methods.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>metrics</title>
+      <link>http://monasca.io/root/metrics/</link>
+      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
+      
+      <guid>http://monasca.io/root/metrics/</guid>
+      <description>
+
+&lt;p&gt;Provides an API for real-time storage and retrieval of metrics and statistics.  The main features of metrics are as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Storage and retrieval of metrics.&lt;/li&gt;
+&lt;li&gt;Push-based, streaming of metrics. Monasca support pushing metrics to the API, and does not support pull-based metrics.&lt;/li&gt;
+&lt;li&gt;Query statistics about metrics, such as average, min, max, sum and count, over time ranges and periods.&lt;/li&gt;
+&lt;li&gt;Multi-dimensional representation based on dimensions, (key, value) pairs to that data can be easily sliced and diced.&lt;/li&gt;
+&lt;li&gt;Millisecond resolution.&lt;/li&gt;
+&lt;li&gt;Meta data associated with metrics can be used to provide additional about metrics such as http status codes and error messages. For example, if Nagious plugins are run by the Monasca Agent, the resulting error description can be sent as meta data with the metric.&lt;/li&gt;
+&lt;li&gt;Long data retention periods of metrics in their original fidelity, without lossy compression and rollups.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;anatomy-of-a-metric:ad85a46ccb5d15dbaf3cad93f2560710&#34;&gt;Anatomy of a metric&lt;/h5&gt;
+
+&lt;p&gt;A metric is a simple, concise, multi-dimensional and flexible description that consists of the following fields:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;name: A user-friendly name of the metric as a string.&lt;/li&gt;
+&lt;li&gt;dimensions: A dictionary of user-defined (key, value) pairs that are used to uniquely identify a metric and can be used to filter and slice-and-dice metrics.&lt;/li&gt;
+&lt;li&gt;timestamp: Time in milliseconds from the epoch.&lt;/li&gt;
+&lt;li&gt;value: A float.&lt;/li&gt;
+&lt;li&gt;value_meta: An optional dictionary of user-defined (key, value) pairs that can be used to describe a measurement. Value_meta is typically used to decribe status codes and error messages.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;example:ad85a46ccb5d15dbaf3cad93f2560710&#34;&gt;Example&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;    POST /v2.0/metrics
+    {
+	name: cpu.user_perc,
+	dimensions: {
+		hostname: hostname.domain.com,
+		region: uswest,
+		zone: 1,
+		service: compute
+	}
+	timestamp: 0, /* milliseconds */
+	value: 0.0,
+	value_meta: {
+		status_code: 400,
+		msg: Internal server error
+	}
+    }
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>alarms</title>
+      <link>http://monasca.io/root/alarms/</link>
+      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
+      
+      <guid>http://monasca.io/root/alarms/</guid>
+      <description>&lt;p&gt;A real-time in-memory streaming thresholding engine capable of processing hundreds of thousands of metrics.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>notifications</title>
+      <link>http://monasca.io/root/notifications/</link>
+      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
+      
+      <guid>http://monasca.io/root/notifications/</guid>
+      <description>&lt;p&gt;Notifications can be sent when alarm state transition occurs.  Monasca supports and integrated notification engine that allows notification methods to be created, such as email contacts, and associated with alarms. When alarm state transitions occur notifications can be sent to specified contacts and services.&lt;/p&gt;
+
+&lt;p&gt;Support the following type of notification methods:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Email&lt;/li&gt;
+&lt;li&gt;PagerDuty&lt;/li&gt;
+&lt;li&gt;Webhooks&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>architecture</title>
+      <link>http://monasca.io/root/architecture/</link>
+      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
+      
+      <guid>http://monasca.io/root/architecture/</guid>
+      <description>&lt;p&gt;Monasca is a highly performant, scalable, fault-tolerant and extensible micro-services messages bus based architecture.&lt;/p&gt;
+
+&lt;p&gt;More details will be coming soon.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>agent</title>
+      <link>http://monasca.io/root/agent/</link>
+      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
+      
+      <guid>http://monasca.io/root/agent/</guid>
+      <description>&lt;p&gt;Monasca supports an optional monitoring agent that is written in Python.  The agent supports the following checks and metrics:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;System metrics, such as cpu, memory, network, disk and file-system utilization.&lt;/li&gt;
+&lt;li&gt;Service metrics, such as MySQL, RabbitMQ, Kafka, and many others.&lt;/li&gt;
+&lt;li&gt;Statsd&lt;/li&gt;
+&lt;li&gt;Nagios: The Monasca Agent can run any Nagio check and convert the results to a metric and send to the Monasca API. Status code and messages are sent as &amp;lsquo;value_meta&amp;rdquo; in the metric.&lt;/li&gt;
+&lt;li&gt;Check_mk&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>coming soon</title>
+      <link>http://monasca.io/root/coming-soon/</link>
+      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
+      
+      <guid>http://monasca.io/root/coming-soon/</guid>
+      <description>&lt;p&gt;Stop, that&amp;rsquo;s enough. You&amp;rsquo;re killing me. Monasca will be adding support for the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Logging: In the style of Loggly, support for an authenticated multi-tenant logging solution is in progress.&lt;/li&gt;
+&lt;li&gt;Complex Event Processing:&lt;/li&gt;
+&lt;li&gt;Cassandra&lt;/li&gt;
+&lt;li&gt;Ceilosca, integration with Ceilometer and Monasca.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>develop &amp; deploy</title>
+      <link>http://monasca.io/root/develop-deploy/</link>
+      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
+      
+      <guid>http://monasca.io/root/develop-deploy/</guid>
+      <description>&lt;p&gt;Want to learn how to develop for Monasca or just deploy Stay-tuned&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

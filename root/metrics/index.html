@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>metrics</title>
+  <link href="http://monasca.io//css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="http://monasca.io//css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+  <style type="text/css">
+  
+    footer.page-footer{background-image: url(http://monasca.io//images/default.png);}
+  
+  </style>
+</head>
+<body>
+  <ul id="slide-out" class="side-nav">
+    <li><a href="http://monasca.io/"><i class="mdi-action-home left"></i>Home<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+    <li><a href="http://monasca.io//categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+  </ul>
+  <div id="index-banner" class="parallax-container">
+  <a data-activates="slide-out" class="btn-floating button-collapse" style="top: 5px; left: 5px;"><i class="mdi-navigation-menu"></i></a>
+    <div class="section no-pad-bot">
+      <div class="container">
+        
+        <h1 class="header center teal-text text-lighten-2">Monasca</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Monitoring-as-a-Service (at-Scale)</h5>
+        </div>
+        <div class="row center">
+        
+        
+        
+        
+        
+        </div>
+      </div>
+    </div>
+    <div class="parallax">
+    
+      <img src="http://monasca.io//images/default.png">
+    
+    </div>
+  </div>
+
+
+
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel">
+          <h4>metrics</h4>
+          <p>
+
+<p>Provides an API for real-time storage and retrieval of metrics and statistics.  The main features of metrics are as follows:</p>
+
+<ul>
+<li>Storage and retrieval of metrics.</li>
+<li>Push-based, streaming of metrics. Monasca support pushing metrics to the API, and does not support pull-based metrics.</li>
+<li>Query statistics about metrics, such as average, min, max, sum and count, over time ranges and periods.</li>
+<li>Multi-dimensional representation based on dimensions, (key, value) pairs to that data can be easily sliced and diced.</li>
+<li>Millisecond resolution.</li>
+<li>Meta data associated with metrics can be used to provide additional about metrics such as http status codes and error messages. For example, if Nagious plugins are run by the Monasca Agent, the resulting error description can be sent as meta data with the metric.</li>
+<li>Long data retention periods of metrics in their original fidelity, without lossy compression and rollups.</li>
+</ul>
+
+<h5 id="anatomy-of-a-metric:ad85a46ccb5d15dbaf3cad93f2560710">Anatomy of a metric</h5>
+
+<p>A metric is a simple, concise, multi-dimensional and flexible description that consists of the following fields:</p>
+
+<ul>
+<li>name: A user-friendly name of the metric as a string.</li>
+<li>dimensions: A dictionary of user-defined (key, value) pairs that are used to uniquely identify a metric and can be used to filter and slice-and-dice metrics.</li>
+<li>timestamp: Time in milliseconds from the epoch.</li>
+<li>value: A float.</li>
+<li>value_meta: An optional dictionary of user-defined (key, value) pairs that can be used to describe a measurement. Value_meta is typically used to decribe status codes and error messages.</li>
+</ul>
+
+<h5 id="example:ad85a46ccb5d15dbaf3cad93f2560710">Example</h5>
+
+<pre><code>    POST /v2.0/metrics
+    {
+	name: cpu.user_perc,
+	dimensions: {
+		hostname: hostname.domain.com,
+		region: uswest,
+		zone: 1,
+		service: compute
+	}
+	timestamp: 0, /* milliseconds */
+	value: 0.0,
+	value_meta: {
+		status_code: 400,
+		msg: Internal server error
+	}
+    }
+</code></pre>
+</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s3 m1">
+      
+        <a class="btn-floating btn-large waves-effect waves-light" href="http://monasca.io/root/api/"><i class="mdi-navigation-arrow-back"></i></a>
+      
+      </div>
+      <div class="col s6 m10 center">&nbsp</div>
+      <div class="col s3 m1">
+      
+        <a class="btn-floating btn-large waves-effect waves-light" href="http://monasca.io/root/alarms/"><i class="mdi-navigation-arrow-forward"></i></a>
+      
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+      © 2015 Hewlett-Packard
+      <div class="right"><a class="grey-text text-lighten-4" href="http://monasca.io">Monasca.io</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="http://monasca.io//js/materialize.min.js"></script>
+  <script src="http://monasca.io//js/init.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  </body>
+</html>
+
