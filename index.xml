@@ -121,9 +121,17 @@
       <guid>http://monasca.io/root/about/</guid>
       <description>
 
-&lt;p&gt;Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution for metrics, complex event processing and logging.  Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.&lt;/p&gt;
+&lt;p&gt;Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution for metrics.
+Metrics can be published to the Monasca API, stored and queried.
+Alarms can be created and notifications, such as email, can be sent when alarms transition state.
+Support for complex event processing and logging is in progress.
+Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.&lt;/p&gt;
 
 &lt;h5 id=&#34;who-is-involved:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Who is involved?&lt;/h5&gt;
+
+&lt;p&gt;Monasca is in the process of applying for &lt;a href=&#34;http://www.openstack.org/&#34;&gt;OpenStack&lt;/a&gt; governance.
+Currently, Monasca is hosted in in Github under the Stackforge organization, and will move to OpenStack.
+All code has been developed under an Apache 2.0 license and has no restrictions on distribution or deployment.&lt;/p&gt;
 
 &lt;p&gt;Companies involved with developing and/or deploying Monasca include the following:&lt;/p&gt;
 
