@@ -24,7 +24,7 @@ Alarms can be created and notifications, such as email, can be sent when alarms 
 Support for complex event processing and logging is in progress.
 Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.&lt;/p&gt;
 
-&lt;h5 id=&#34;who-is-involved:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Who is involved?&lt;/h5&gt;
+&lt;h5 id=&#34;who-is-involved:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;who is involved?&lt;/h5&gt;
 
 &lt;p&gt;The members of the Monasca team are primarily composed of companies, organizations and individuals involved in development and deployment of OpenStack.
 Monasca is in the process of applying for &lt;a href=&#34;http://www.openstack.org/&#34;&gt;OpenStack&lt;/a&gt; governance.
@@ -41,13 +41,14 @@ Currently, Monasca is hosted in Github under the Stackforge organization, and wi
 &lt;li&gt;Rackspace&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h5 id=&#34;technologies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Technologies&lt;/h5&gt;
+&lt;h5 id=&#34;technologies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;technologies&lt;/h5&gt;
 
 &lt;p&gt;Monasca is written in both Java and Python. Several of the components in Monasca started out in Java. However, the go-forward language for Monasca is Python.&lt;/p&gt;
 
 &lt;p&gt;Monasca is built on several open-source technologies including:&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://openstack.org&#34;&gt;OpenStack&lt;/a&gt; Monasca uses the &lt;a href=&#34;http://docs.openstack.org/developer/keystone/&#34;&gt;Keystone&lt;/a&gt; OpenStack Identity Service for authentication, authorization and multi-tenancy. Monasca is also in the process of integrating with several other OpenStack services such as &lt;a href=&#34;http://docs.openstack.org/developer/heat/&#34;&gt;Heat&lt;/a&gt; for auto-scaling and &lt;a href=&#34;http://docs.openstack.org/developer/ceilometer/&#34;&gt;Ceilometer&lt;/a&gt; for monitoring OpenStack resources. Integrations with additional services will be targeted in the future.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://stacktach.com/&#34;&gt;StackTach.v3&lt;/a&gt; Real-time event stream processing system. StackTach.v3 is used in the Monasca Event processing system that is under development.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://kafka.apache.org/&#34;&gt;Apache Kafka&lt;/a&gt; A high-throughput distributed messaging system. Kafka is a central component in Monasca and provides the infranstructure for all internal communications between components.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://storm.apache.org/&#34;&gt;Apache Storm&lt;/a&gt; Apache Storm is a free and open source distributed realtime computation system. Apache Storm is used in the Monasca Threshold Engine.&lt;/li&gt;
@@ -63,11 +64,11 @@ Currently, Monasca is hosted in Github under the Stackforge organization, and wi
 &lt;li&gt;&lt;a href=&#34;http://www.vertica.com/&#34;&gt;HP Vertica&lt;/a&gt; HP Vertica delivers the most advanced SQL analytics as a standards-based relational database with full support for SQL, JDBC, and ODBC. Vertica is one of the supported databases for storing metrics and alarm history within Monasca.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h5 id=&#34;licensing:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Licensing&lt;/h5&gt;
+&lt;h5 id=&#34;licensing:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;licensing&lt;/h5&gt;
 
 &lt;p&gt;Monasca has been developed under an &lt;a href=&#34;http://www.apache.org/licenses/LICENSE-2.0&#34;&gt;Apache 2.0 license&lt;/a&gt; and has no restrictions on distribution or deployment.&lt;/p&gt;
 
-&lt;h5 id=&#34;acknowledgments:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Acknowledgments&lt;/h5&gt;
+&lt;h5 id=&#34;acknowledgments:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;acknowledgments&lt;/h5&gt;
 
 &lt;p&gt;Monasca uses the &lt;a href=&#34;https://www.yourkit.com/&#34;&gt;YourKit Java Profiler&lt;/a&gt; for Java development and performance analysis.&lt;/p&gt;
 
