@@ -73,21 +73,28 @@
 
 <p>Monasca is written in both Java and Python. Several of the componenent in Monasca started out in Java. However, the go-forward language for Monasca is Python.</p>
 
-<p>Monasca is built on several open-source technololgies including:</p>
+<p>Monasca is built on several open-source technologies including:</p>
 
 <ul>
-<li>Kafka</li>
-<li>Apache Storm</li>
-<li>ZooKeeper</li>
-<li>InfluxDB</li>
-<li>MySQL</li>
+<li><a href="http://stacktach.com/">StackTach.v3</a> Real-time event stream processing system. StackTach.v3 is used in the Monasca Event processing system that is under development.</li>
+<li><a href="http://kafka.apache.org/">Apache Kafka</a> A high-throughput distributed messaging system. Kafka is a central component in Monasca and provides the infranstructure for all internal communications between components.</li>
+<li><a href="https://storm.apache.org/">Apache Storm</a> Apache Storm is a free and open source distributed realtime computation system. Apache Storm is used in the Monasca Threshold Engine.</li>
+<li><a href="https://zookeeper.apache.org/">Apache ZooKeeper</a> Apache ZooKeeper is is by Kafka and Storm.</li>
+<li><a href="https://influxdb.com/">InfluxDB</a> An open-source distributed time series database with no external dependencies. InfluxDB is one of the supported databases for storing metrics and alarm history.</li>
+<li><a href="https://www.mysql.com/">MySQL</a> MySQL is a freely available open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). SQL is the most popular language for adding, accessing and managing content in a database. It is most noted for its quick processing, proven reliability, ease and flexibility of use. MySQL is one of the supported databases for the Monasca Config Database.</li>
 </ul>
 
 <p>In addition, Monasca optionally supports the following:</p>
 
 <ul>
-<li>Vertica</li>
+<li><a href="http://www.vertica.com/">HP Vertica</a> HP Vertica delivers the most advanced SQL analytics as a standards-based relational database with full support for SQL, JDBC, and ODBC. Vertica is one of the supported databases for storing metrics and alarm history.</li>
 </ul>
+
+<h5 id="acknowledgments:6083a88ee3411b0d17ce02d738f69d47">Acknowledgments</h5>
+
+<p>Monasca uses <a href="https://www.yourkit.com/">YourKit</a> Profiler for Java development and performance analysis.</p>
+
+<p><a href="https://www.yourkit.com/"><img src="https://www.yourkit.com/images/yklogo.png" alt="Alt text" title="YourKit" /></a></p>
 </p>
           
         </div>

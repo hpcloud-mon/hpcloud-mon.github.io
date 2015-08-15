@@ -140,21 +140,28 @@
 
 &lt;p&gt;Monasca is written in both Java and Python. Several of the componenent in Monasca started out in Java. However, the go-forward language for Monasca is Python.&lt;/p&gt;
 
-&lt;p&gt;Monasca is built on several open-source technololgies including:&lt;/p&gt;
+&lt;p&gt;Monasca is built on several open-source technologies including:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Kafka&lt;/li&gt;
-&lt;li&gt;Apache Storm&lt;/li&gt;
-&lt;li&gt;ZooKeeper&lt;/li&gt;
-&lt;li&gt;InfluxDB&lt;/li&gt;
-&lt;li&gt;MySQL&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stacktach.com/&#34;&gt;StackTach.v3&lt;/a&gt; Real-time event stream processing system. StackTach.v3 is used in the Monasca Event processing system that is under development.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://kafka.apache.org/&#34;&gt;Apache Kafka&lt;/a&gt; A high-throughput distributed messaging system. Kafka is a central component in Monasca and provides the infranstructure for all internal communications between components.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://storm.apache.org/&#34;&gt;Apache Storm&lt;/a&gt; Apache Storm is a free and open source distributed realtime computation system. Apache Storm is used in the Monasca Threshold Engine.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zookeeper.apache.org/&#34;&gt;Apache ZooKeeper&lt;/a&gt; Apache ZooKeeper is is by Kafka and Storm.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://influxdb.com/&#34;&gt;InfluxDB&lt;/a&gt; An open-source distributed time series database with no external dependencies. InfluxDB is one of the supported databases for storing metrics and alarm history.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mysql.com/&#34;&gt;MySQL&lt;/a&gt; MySQL is a freely available open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). SQL is the most popular language for adding, accessing and managing content in a database. It is most noted for its quick processing, proven reliability, ease and flexibility of use. MySQL is one of the supported databases for the Monasca Config Database.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;In addition, Monasca optionally supports the following:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Vertica&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.vertica.com/&#34;&gt;HP Vertica&lt;/a&gt; HP Vertica delivers the most advanced SQL analytics as a standards-based relational database with full support for SQL, JDBC, and ODBC. Vertica is one of the supported databases for storing metrics and alarm history.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h5 id=&#34;acknowledgments:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Acknowledgments&lt;/h5&gt;
+
+&lt;p&gt;Monasca uses &lt;a href=&#34;https://www.yourkit.com/&#34;&gt;YourKit&lt;/a&gt; Profiler for Java development and performance analysis.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.yourkit.com/&#34;&gt;&lt;img src=&#34;https://www.yourkit.com/images/yklogo.png&#34; alt=&#34;Alt text&#34; title=&#34;YourKit&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
