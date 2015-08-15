@@ -121,7 +121,7 @@
       <guid>http://monasca.io/root/about/</guid>
       <description>
 
-&lt;p&gt;Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution for metrics.
+&lt;p&gt;Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution.
 Metrics can be published to the Monasca API, stored and queried.
 Alarms can be created and notifications, such as email, can be sent when alarms transition state.
 Support for complex event processing and logging is in progress.
@@ -129,11 +129,11 @@ Monasca builds an extensible platform for advanced monitoring services that can 
 
 &lt;h5 id=&#34;who-is-involved:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Who is involved?&lt;/h5&gt;
 
-&lt;p&gt;Monasca is in the process of applying for &lt;a href=&#34;http://www.openstack.org/&#34;&gt;OpenStack&lt;/a&gt; governance.
-Currently, Monasca is hosted in in Github under the Stackforge organization, and will move to OpenStack.
-All code has been developed under an Apache 2.0 license and has no restrictions on distribution or deployment.&lt;/p&gt;
+&lt;p&gt;The members of the Monasca team are primarily composed of companies, organizations and individuals involved in development and deployment of OpenStack.
+Monasca is in the process of applying for &lt;a href=&#34;http://www.openstack.org/&#34;&gt;OpenStack&lt;/a&gt; governance.
+Currently, Monasca is hosted in Github under the Stackforge organization, and will move to the OpenStack organization when approved.&lt;/p&gt;
 
-&lt;p&gt;Companies involved with developing and/or deploying Monasca include the following:&lt;/p&gt;
+&lt;p&gt;Some of the major companies involved with developing and/or deploying Monasca include the following:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Hewlett-Packard&lt;/li&gt;
@@ -146,7 +146,7 @@ All code has been developed under an Apache 2.0 license and has no restrictions 
 
 &lt;h5 id=&#34;technologies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Technologies&lt;/h5&gt;
 
-&lt;p&gt;Monasca is written in both Java and Python. Several of the componenent in Monasca started out in Java. However, the go-forward language for Monasca is Python.&lt;/p&gt;
+&lt;p&gt;Monasca is written in both Java and Python. Several of the components in Monasca started out in Java. However, the go-forward language for Monasca is Python.&lt;/p&gt;
 
 &lt;p&gt;Monasca is built on several open-source technologies including:&lt;/p&gt;
 
@@ -157,17 +157,22 @@ All code has been developed under an Apache 2.0 license and has no restrictions 
 &lt;li&gt;&lt;a href=&#34;https://zookeeper.apache.org/&#34;&gt;Apache ZooKeeper&lt;/a&gt; Apache ZooKeeper is is by Kafka and Storm.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://influxdb.com/&#34;&gt;InfluxDB&lt;/a&gt; An open-source distributed time series database with no external dependencies. InfluxDB is one of the supported databases for storing metrics and alarm history.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.mysql.com/&#34;&gt;MySQL&lt;/a&gt; MySQL is a freely available open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). SQL is the most popular language for adding, accessing and managing content in a database. It is most noted for its quick processing, proven reliability, ease and flexibility of use. MySQL is one of the supported databases for the Monasca Config Database.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://grafana.org&#34;&gt;Grafana&lt;/a&gt; is an open source, feature rich metrics dashboard and graph editor. Support for Monasca as a data source in Grafana has been added.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;In addition, Monasca optionally supports the following:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.vertica.com/&#34;&gt;HP Vertica&lt;/a&gt; HP Vertica delivers the most advanced SQL analytics as a standards-based relational database with full support for SQL, JDBC, and ODBC. Vertica is one of the supported databases for storing metrics and alarm history.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.vertica.com/&#34;&gt;HP Vertica&lt;/a&gt; HP Vertica delivers the most advanced SQL analytics as a standards-based relational database with full support for SQL, JDBC, and ODBC. Vertica is one of the supported databases for storing metrics and alarm history within Monasca.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h5 id=&#34;licensing:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Licensing&lt;/h5&gt;
+
+&lt;p&gt;All code has been developed under an Apache 2.0 license and has no restrictions on distribution or deployment.&lt;/p&gt;
 
 &lt;h5 id=&#34;acknowledgments:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Acknowledgments&lt;/h5&gt;
 
-&lt;p&gt;Monasca uses &lt;a href=&#34;https://www.yourkit.com/&#34;&gt;YourKit&lt;/a&gt; Profiler for Java development and performance analysis.&lt;/p&gt;
+&lt;p&gt;Monasca uses the &lt;a href=&#34;https://www.yourkit.com/&#34;&gt;YourKit Java Profiler&lt;/a&gt; for Java development and performance analysis.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.yourkit.com/&#34;&gt;&lt;img src=&#34;https://www.yourkit.com/images/yklogo.png&#34; alt=&#34;Alt text&#34; title=&#34;YourKit&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
