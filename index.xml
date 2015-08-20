@@ -236,10 +236,21 @@ for an Anomaly detection engine.&lt;/p&gt;
       <pubDate>Tue, 18 Aug 2015 17:04:58 -0600</pubDate>
       
       <guid>http://monasca.io/root/dev/</guid>
-      <description>&lt;p&gt;Monasca is an active project seeking to be a part of the OpenStack community and welcomes new development.&lt;/p&gt;
+      <description>
+
+&lt;p&gt;Monasca is an active project seeking to be a part of the OpenStack community and welcomes new development.&lt;/p&gt;
+
+&lt;h4 id=&#34;openstack-community:9ebf8dc1d918e9d82885a54b6ce06af5&#34;&gt;OpenStack Community&lt;/h4&gt;
 
 &lt;p&gt;We have &lt;a href=&#34;https://review.openstack.org/#/c/213183/&#34;&gt;submitted&lt;/a&gt; to be included into OpenStack and follow OpenStack
-&lt;a href=&#34;https://wiki.openstack.org/wiki/How_To_Contribute&#34;&gt;contribution guidelines&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://wiki.openstack.org/wiki/How_To_Contribute&#34;&gt;contribution guidelines&lt;/a&gt; and &lt;a href=&#34;http://docs.openstack.org/developer/hacking/&#34;&gt;code standards&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Our project has a &lt;a href=&#34;https://launchpad.net/monasca&#34;&gt;launchpad site&lt;/a&gt; which is used for bug tracking. The project mailing list is also hosted on launchpad,
+see the &lt;a href=&#34;https://launchpad.net/~monasca&#34;&gt;team page&lt;/a&gt; for details on that.&lt;/p&gt;
+
+&lt;p&gt;Details on the team meetings are found on this &lt;a href=&#34;https://wiki.openstack.org/wiki/Meetings/Monasca&#34;&gt;OpenStack wiki page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;code-contributions:9ebf8dc1d918e9d82885a54b6ce06af5&#34;&gt;Code Contributions&lt;/h4&gt;
 
 &lt;p&gt;While we await our full inclusion into OpenStack our code is hosted as part of stackforge and can be found &lt;a href=&#34;https://github.com/stackforge?query=monasca&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 
