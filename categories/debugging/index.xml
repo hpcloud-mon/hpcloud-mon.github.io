@@ -6,72 +6,25 @@
     <description>Recent content in Debugging on Monasca</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2015 Hewlett-Packard</copyright>
-    <lastBuildDate>Fri, 14 Aug 2015 16:42:17 -0600</lastBuildDate>
+    <copyright>© 2015 Hewlett Packard Enterprise</copyright>
+    <lastBuildDate>Wed, 19 Aug 2015 10:12:42 -0600</lastBuildDate>
     <atom:link href="http://monasca.io/categories/debugging/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Monitoring of Monitoring</title>
-      <link>http://monasca.io/operations/mom/</link>
-      <pubDate>Fri, 14 Aug 2015 16:42:17 -0600</pubDate>
+      <title>Common Errors</title>
+      <link>http://monasca.io/operations/errors/</link>
+      <pubDate>Wed, 19 Aug 2015 10:12:42 -0600</pubDate>
       
-      <guid>http://monasca.io/operations/mom/</guid>
-      <description>&lt;p&gt;Monasca itself needs to be monitored and is fully capable of monitoring itself.  In non-production installations this can be done by the agent running on the Monasca boxes reporting back to the Monasca API. For production installations I recommend that the agent running on the Monasca nodes report to another installation of Monasca possibly a single vm &amp;lsquo;mini-mon&amp;rsquo; which is itself monitored by the primary installation, this avoids dependency loops.&lt;/p&gt;
+      <guid>http://monasca.io/operations/errors/</guid>
+      <description>
 
-&lt;p&gt;As components of Monasca are developed metrics for the monitoring of that component need to be added as well as alarm definitions and finally default graphs to view the metrics. The most basic metrics are used in simple up/down alarms and more advanced used for thresholds and graphs aiding in predictive failure and capacity planning.&lt;/p&gt;
+&lt;p&gt;Common errors, their likely cause and solution.&lt;/p&gt;
 
-&lt;p&gt;Here are the MoM alarms broken down by component, the exact alarms can be found at &lt;a href=&#34;https://github.com/hpcloud-mon/ansible-monasca-default-alarms/blob/master/tasks/monasca.yml&#34;&gt;https://github.com/hpcloud-mon/ansible-monasca-default-alarms/blob/master/tasks/monasca.yml&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;api-errors:8f8a0b09fa5f199438dd9e7557ce36db&#34;&gt;API Errors&lt;/h4&gt;
 
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Component&lt;/th&gt;
-&lt;th&gt;Alarm&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
+&lt;h4 id=&#34;agent-errors:8f8a0b09fa5f199438dd9e7557ce36db&#34;&gt;Agent Errors&lt;/h4&gt;
 
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;zookeeper&lt;/td&gt;
-&lt;td&gt;pid check, average latency, zookeeper connections_count&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;kafka&lt;/td&gt;
-&lt;td&gt;pid check, consumer lag&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;mysql&lt;/td&gt;
-&lt;td&gt;pid check, slow queries&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;notification&lt;/td&gt;
-&lt;td&gt;pid check, config db time, email time&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;thresh/storm&lt;/td&gt;
-&lt;td&gt;pid check of nimbus, supervisor and workers&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Agent&lt;/td&gt;
-&lt;td&gt;emit time, collection time&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Persister&lt;/td&gt;
-&lt;td&gt;For the Java version a healthcheck on the admin url&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;API&lt;/td&gt;
-&lt;td&gt;For the Java version a healthcheck on the admin url&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;h4 id=&#34;cli-errors:8f8a0b09fa5f199438dd9e7557ce36db&#34;&gt;CLI Errors&lt;/h4&gt;
 </description>
     </item>
     

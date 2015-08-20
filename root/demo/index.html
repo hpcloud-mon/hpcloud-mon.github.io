@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>demo</title>
+  <link href="http://monasca.io//css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="http://monasca.io//css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+  <style type="text/css">
+  
+    footer.page-footer{background-image: url(http://monasca.io//images/default.png);}
+  
+  </style>
+</head>
+<body>
+  <ul id="slide-out" class="side-nav">
+    <li><a href="http://monasca.io/"><i class="mdi-action-home left"></i>Home<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+    <li><a href="http://monasca.io//categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+  </ul>
+  <div id="index-banner" class="parallax-container">
+  <a data-activates="slide-out" class="btn-floating button-collapse" style="top: 5px; left: 5px;"><i class="mdi-navigation-menu"></i></a>
+    <div class="section no-pad-bot">
+      <div class="container">
+        
+        <h1 class="header center teal-text text-lighten-2">Monasca</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Monitoring-as-a-Service (at-Scale)</h5>
+        </div>
+        <div class="row center">
+        
+        
+        
+        
+        
+        </div>
+      </div>
+    </div>
+    <div class="parallax">
+    
+      <img src="http://monasca.io//images/default.png">
+    
+    </div>
+  </div>
+
+
+
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel">
+          <h4>demo</h4>
+          <p>
+
+<p>The primary demo for environment for Monasca is a Docker Image.  To avoid setting all of Monasca up just to investigate it I have created
+a <a href="https://www.docker.com/">Docker</a> <a href="https://hub.docker.com/r/monasca/demo/">demo image</a> that contains all of the Monasca components.</p>
+
+<p>This image can be run via <a href="https://kitematic.com/">kitematic</a> or directly in a Docker installation. If running with Docker simply run</p>
+
+<pre><code>docker run -d -p 80:80 -p 8080:8080 -p 5000:5000 --name monasca monasca/demo
+</code></pre>
+
+<p>and the image will download and start. The demo has a keystone user <code>mini-mon</code> with the password <code>password</code>. The Monasca horizon plugin is available
+on port 80, the <a href="/components/api/">Monasca API</a> on port 8080 and the embedded keystone on port 5000. Additionally if you shell into the environment
+a set of env variables is available at <code>/setup/env.sh</code> so you can simple source this file and begin using the <a href="/components/cli">Monasca CLI</a>.</p>
+
+<h4 id="alternatives:33d3cedc2d74629a40b36bf8cf252b87">Alternatives</h4>
+
+<p>Besides the Docker demo the Monasca uses a <a href="https://www.vagrantup.com/">Vagrant</a> environment for development and this can be used as an alternative
+demo environment. It is a bit more involved to setup but works well, more information at the <a href="/dev/vagrant/">development with vagrant page</a>.</p>
+</p>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+      © 2015 Hewlett Packard Enterprise
+      <div class="right"><a class="grey-text text-lighten-4" href="http://monasca.io/">Monasca.io</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="http://monasca.io//js/materialize.min.js"></script>
+  <script src="http://monasca.io//js/init.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  </body>
+</html>
+

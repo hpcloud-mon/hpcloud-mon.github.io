@@ -6,14 +6,14 @@
     <description>Recent content in Roots on Monasca</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© 2015 Hewlett-Packard</copyright>
-    <lastBuildDate>Fri, 07 Aug 2015 18:32:00 -0600</lastBuildDate>
+    <copyright>© 2015 Hewlett Packard Enterprise</copyright>
+    <lastBuildDate>Wed, 19 Aug 2015 18:32:00 -0600</lastBuildDate>
     <atom:link href="http://monasca.io/root/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>about</title>
       <link>http://monasca.io/root/about/</link>
-      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
+      <pubDate>Wed, 19 Aug 2015 18:32:00 -0600</pubDate>
       
       <guid>http://monasca.io/root/about/</guid>
       <description>
@@ -24,7 +24,7 @@ Alarms can be created and notifications, such as email, can be sent when alarms 
 Support for complex event processing and logging is in progress.
 Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.&lt;/p&gt;
 
-&lt;h5 id=&#34;who-is-involved:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;who is involved?&lt;/h5&gt;
+&lt;h5 id=&#34;who-is-involved:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Who is involved?&lt;/h5&gt;
 
 &lt;p&gt;The members of the Monasca team are primarily composed of companies, organizations and individuals involved in development and deployment of OpenStack.
 Monasca is in the process of applying for &lt;a href=&#34;http://www.openstack.org/&#34;&gt;OpenStack&lt;/a&gt; governance.
@@ -41,144 +41,37 @@ Currently, Monasca is hosted in Github under the Stackforge organization, and wi
 &lt;li&gt;Rackspace&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h5 id=&#34;technologies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;technologies&lt;/h5&gt;
+&lt;h5 id=&#34;technologies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Technologies&lt;/h5&gt;
 
 &lt;p&gt;Monasca is written in both Java and Python. Several of the components in Monasca started out in Java. However, the go-forward language for Monasca is Python.&lt;/p&gt;
 
 &lt;p&gt;Monasca is built on several open-source technologies including:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://openstack.org&#34;&gt;OpenStack&lt;/a&gt;: Monasca uses the &lt;a href=&#34;http://docs.openstack.org/developer/keystone/&#34;&gt;Keystone&lt;/a&gt; OpenStack Identity Service for authentication, authorization and multi-tenancy. Monasca is also in the process of integrating with several other OpenStack services such as &lt;a href=&#34;http://docs.openstack.org/developer/heat/&#34;&gt;Heat&lt;/a&gt; for auto-scaling and &lt;a href=&#34;http://docs.openstack.org/developer/ceilometer/&#34;&gt;Ceilometer&lt;/a&gt; for monitoring OpenStack resources. Integrations with additional OpenStack services will be targeted in the future.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://stacktach.com/&#34;&gt;StackTach.v3&lt;/a&gt;: A real-time event stream processing system. StackTach.v3 is used in the Monasca Event processing system that is under development.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://kafka.apache.org/&#34;&gt;Apache Kafka&lt;/a&gt;: A high-throughput distributed messaging system. Kafka is a central component in Monasca and provides the infranstructure for all internal communications between components.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://storm.apache.org/&#34;&gt;Apache Storm&lt;/a&gt;: A free and open source distributed realtime computation system. Apache Storm is used in the Monasca Threshold Engine.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://zookeeper.apache.org/&#34;&gt;Apache ZooKeeper&lt;/a&gt;: Used by Kafka and Storm.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://influxdb.com/&#34;&gt;InfluxDB&lt;/a&gt;: An open-source distributed time series database with no external dependencies. InfluxDB is one of the supported databases for storing metrics and alarm history.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.mysql.com/&#34;&gt;MySQL&lt;/a&gt;: A freely available open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). SQL is the most popular language for adding, accessing and managing content in a database. It is most noted for its quick processing, proven reliability, ease and flexibility of use. MySQL is one of the supported databases for the Monasca Config Database.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://grafana.org&#34;&gt;Grafana&lt;/a&gt;: An open source, feature rich metrics dashboard and graph editor. Support for Monasca as a data source in Grafana has been added.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stacktach.com/&#34;&gt;StackTach.v3&lt;/a&gt; Real-time event stream processing system. StackTach.v3 is used in the Monasca Event processing system that is under development.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://kafka.apache.org/&#34;&gt;Apache Kafka&lt;/a&gt; A high-throughput distributed messaging system. Kafka is a central component in Monasca and provides the infranstructure for all internal communications between components.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://storm.apache.org/&#34;&gt;Apache Storm&lt;/a&gt; Apache Storm is a free and open source distributed realtime computation system. Apache Storm is used in the Monasca Threshold Engine.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zookeeper.apache.org/&#34;&gt;Apache ZooKeeper&lt;/a&gt; Apache ZooKeeper is is by Kafka and Storm.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://influxdb.com/&#34;&gt;InfluxDB&lt;/a&gt; An open-source distributed time series database with no external dependencies. InfluxDB is one of the supported databases for storing metrics and alarm history.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mysql.com/&#34;&gt;MySQL&lt;/a&gt; MySQL is a freely available open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). SQL is the most popular language for adding, accessing and managing content in a database. It is most noted for its quick processing, proven reliability, ease and flexibility of use. MySQL is one of the supported databases for the Monasca Config Database.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://grafana.org&#34;&gt;Grafana&lt;/a&gt; is an open source, feature rich metrics dashboard and graph editor. Support for Monasca as a data source in Grafana has been added.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;In addition, Monasca optionally supports the following:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.vertica.com/&#34;&gt;HP Vertica&lt;/a&gt;: HP Vertica delivers the most advanced SQL analytics as a standards-based relational database with full support for SQL, JDBC, and ODBC. Vertica is one of the supported databases for storing metrics and alarm history within Monasca.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.vertica.com/&#34;&gt;HP Vertica&lt;/a&gt; HP Vertica delivers the most advanced SQL analytics as a standards-based relational database with full support for SQL, JDBC, and ODBC. Vertica is one of the supported databases for storing metrics and alarm history within Monasca.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h5 id=&#34;licensing:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;licensing&lt;/h5&gt;
+&lt;h5 id=&#34;licensing:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Licensing&lt;/h5&gt;
 
-&lt;p&gt;Monasca has been developed under an &lt;a href=&#34;http://www.apache.org/licenses/LICENSE-2.0&#34;&gt;Apache 2.0 license&lt;/a&gt; and has no restrictions on distribution or deployment.&lt;/p&gt;
+&lt;p&gt;All code has been developed under an Apache 2.0 license and has no restrictions on distribution or deployment.&lt;/p&gt;
 
-&lt;h5 id=&#34;acknowledgments:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;acknowledgments&lt;/h5&gt;
+&lt;h5 id=&#34;acknowledgments:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Acknowledgments&lt;/h5&gt;
 
 &lt;p&gt;Monasca uses the &lt;a href=&#34;https://www.yourkit.com/&#34;&gt;YourKit Java Profiler&lt;/a&gt; for Java development and performance analysis.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.yourkit.com/&#34;&gt;&lt;img src=&#34;https://www.yourkit.com/images/yklogo.png&#34; alt=&#34;Alt text&#34; title=&#34;YourKit&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>api</title>
-      <link>http://monasca.io/root/api/</link>
-      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
-      
-      <guid>http://monasca.io/root/api/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md&#34;&gt;Monasca API&lt;/a&gt; is built on a first-class RESTful API that provides authentication and multi-tenancy.  Monasca integrates with the OpenStack Keystone Identity service.&lt;/p&gt;
-
-&lt;p&gt;Monasca supports the following main resources in the API:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;GET /v2.0/versions: Supplies operations for accessing information about supported versions of the API.&lt;/li&gt;
-&lt;li&gt;GET, POST /v2.0/metrics: Allows metrics to be created and queried.&lt;/li&gt;
-&lt;li&gt;GET /v2.0/metrics/names: Operations for accessing names of metrics.&lt;/li&gt;
-&lt;li&gt;GET /v2.0/metrics/measurements: Operations for accessing measurements of metrics.&lt;/li&gt;
-&lt;li&gt;GET /v2.0/metrics/statistics: Operations for calculating statistics of metrics&lt;/li&gt;
-&lt;li&gt;GET, POST, PUT, PATH, DELETE /v2.0/alarm-definitions: Operations for working with alarm definitions.&lt;/li&gt;
-&lt;li&gt;GET, PUT, DELETE /v2.0/alarms: Operations for working with alarms.&lt;/li&gt;
-&lt;li&gt;GET /v2.0/alarms/state-history: List alarm state history for alarms.&lt;/li&gt;
-&lt;li&gt;GET, POST, PUT, DELETE /v2.0/notification-methods: Operations for working with notification methods.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>metrics</title>
-      <link>http://monasca.io/root/metrics/</link>
-      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
-      
-      <guid>http://monasca.io/root/metrics/</guid>
-      <description>
-
-&lt;p&gt;Provides an API for real-time storage and retrieval of metrics and statistics.  The main features of metrics are as follows:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Storage and retrieval of metrics.&lt;/li&gt;
-&lt;li&gt;Push-based, streaming of metrics. Monasca support pushing metrics to the API, and does not support pull-based metrics.&lt;/li&gt;
-&lt;li&gt;Query statistics about metrics, such as average, min, max, sum and count, over time ranges and periods.&lt;/li&gt;
-&lt;li&gt;Multi-dimensional representation based on dimensions, (key, value) pairs to that data can be easily sliced and diced.&lt;/li&gt;
-&lt;li&gt;Millisecond resolution.&lt;/li&gt;
-&lt;li&gt;Meta data associated with metrics can be used to provide additional about metrics such as http status codes and error messages. For example, if Nagious plugins are run by the Monasca Agent, the resulting error description can be sent as meta data with the metric.&lt;/li&gt;
-&lt;li&gt;Long data retention periods of metrics in their original fidelity, without lossy compression and rollups.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;anatomy-of-a-metric:ad85a46ccb5d15dbaf3cad93f2560710&#34;&gt;Anatomy of a metric&lt;/h5&gt;
-
-&lt;p&gt;A metric is a simple, concise, multi-dimensional and flexible description that consists of the following fields:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;name: A user-friendly name of the metric as a string.&lt;/li&gt;
-&lt;li&gt;dimensions: A dictionary of user-defined (key, value) pairs that are used to uniquely identify a metric and can be used to filter and slice-and-dice metrics.&lt;/li&gt;
-&lt;li&gt;timestamp: Time in milliseconds from the epoch.&lt;/li&gt;
-&lt;li&gt;value: A float.&lt;/li&gt;
-&lt;li&gt;value_meta: An optional dictionary of user-defined (key, value) pairs that can be used to describe a measurement. Value_meta is typically used to decribe status codes and error messages.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;example:ad85a46ccb5d15dbaf3cad93f2560710&#34;&gt;Example&lt;/h5&gt;
-
-&lt;pre&gt;&lt;code&gt;    POST /v2.0/metrics
-    {
-	name: cpu.user_perc,
-	dimensions: {
-		hostname: hostname.domain.com,
-		region: uswest,
-		zone: 1,
-		service: compute
-	}
-	timestamp: 0, /* milliseconds */
-	value: 0.0,
-	value_meta: {
-		status_code: 400,
-		msg: Internal server error
-	}
-    }
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>alarms</title>
-      <link>http://monasca.io/root/alarms/</link>
-      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
-      
-      <guid>http://monasca.io/root/alarms/</guid>
-      <description>&lt;p&gt;A real-time in-memory streaming thresholding engine capable of processing hundreds of thousands of metrics.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>notifications</title>
-      <link>http://monasca.io/root/notifications/</link>
-      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
-      
-      <guid>http://monasca.io/root/notifications/</guid>
-      <description>&lt;p&gt;Notifications can be sent when alarm state transition occurs.  Monasca supports and integrated notification engine that allows notification methods to be created, such as email contacts, and associated with alarms. When alarm state transitions occur notifications can be sent to specified contacts and services.&lt;/p&gt;
-
-&lt;p&gt;Support the following type of notification methods:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Email&lt;/li&gt;
-&lt;li&gt;PagerDuty&lt;/li&gt;
-&lt;li&gt;Webhooks&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
@@ -188,27 +81,73 @@ Currently, Monasca is hosted in Github under the Stackforge organization, and wi
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
       <guid>http://monasca.io/root/architecture/</guid>
-      <description>&lt;p&gt;Monasca is a highly performant, scalable, fault-tolerant and extensible micro-services messages bus based architecture.&lt;/p&gt;
+      <description>
 
-&lt;p&gt;More details will be coming soon.&lt;/p&gt;
+&lt;p&gt;Monasca is a highly performant, scalable, fault-tolerant and extensible micro-services messages bus based architecture.&lt;/p&gt;
+
+&lt;p&gt;It uses a REST API for high-speed metrics processing and querying and has a streaming alarm engine and notification engine. All of these are linked
+using the messaging system &lt;a href=&#34;https://kafka.apache.org/&#34;&gt;Kafka&lt;/a&gt;. Every component in the system is built with High Availability in mind and can grow
+horizontally to allow for monitoring of very large systems.
+&lt;img src=&#34;http://monasca.io/img/Monasca-arch-component-diagram.png&#34; alt=&#34;Monasca Architecture&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;metrics-alarm-flow:1bf455b3a3c6e1e40be41ef6023b75eb&#34;&gt;Metrics/Alarm Flow&lt;/h4&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt; is the gateway for all interaction with Monasca. In a typical scenario &lt;a href=&#34;http://monasca.io/components/metrics&#34;&gt;metrics&lt;/a&gt;
+are collected by the &lt;a href=&#34;http://monasca.io/components/agent/&#34;&gt;Monasca Agent&lt;/a&gt; running on a system and sent to the Monasca API. The api then puts the metrics onto the Kafak queue.
+From here the &lt;a href=&#34;http://monasca.io/components/persister/&#34;&gt;Monasca Persister&lt;/a&gt; consumes metrics and writes them to our &lt;a href=&#34;http://monasca.io/components/metrics_db/&#34;&gt;Metrics database&lt;/a&gt;. The
+&lt;a href=&#34;http://monasca.io/components/thresh/&#34;&gt;Monasca Threshold Engine&lt;/a&gt; also consumes the metrics and uses them to evaluate &lt;a href=&#34;http://monasca.io/components/alarms/&#34;&gt;alarms&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;At this point the metrics are in our system and can be be retrieved from the Monasca API, either directly or through one of our other components
+such as the Horizon plugin or the &lt;a href=&#34;http://monasca.io/components/cli&#34;&gt;Monasca CLI&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When the threshold engine evaluates the metrics against the alarms it can create alarm state transition events. These are published back onto Kafka
+and are read by both the persister and &lt;a href=&#34;http://monasca.io/components/notifications/&#34;&gt;Notification Engine&lt;/a&gt;. The persister simply writes the alarm transitions to the
+DB for future retrieval. The notification engine will send a notification of the configured type for appropriate state transitions.&lt;/p&gt;
+
+&lt;p&gt;In addition to the components discussed above we also have a configuration database used for storing information such as alarm definitions and
+notification methods. This db can be either mysql or postgresql.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Future Components&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The events and transform engines are actively being worked on and will soon be incorporated. In addition some proof of concept work has been done
+for an Anomaly detection engine.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>agent</title>
-      <link>http://monasca.io/root/agent/</link>
-      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
+      <title>dev</title>
+      <link>http://monasca.io/root/dev/</link>
+      <pubDate>Tue, 18 Aug 2015 17:04:58 -0600</pubDate>
       
-      <guid>http://monasca.io/root/agent/</guid>
-      <description>&lt;p&gt;Monasca supports an optional monitoring agent that is written in Python.  The agent supports the following checks and metrics:&lt;/p&gt;
+      <guid>http://monasca.io/root/dev/</guid>
+      <description>&lt;p&gt;Monasca is an active project seeking to be a part of the OpenStack community and welcomes new development.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;System metrics, such as cpu, memory, network, disk and file-system utilization.&lt;/li&gt;
-&lt;li&gt;Service metrics, such as MySQL, RabbitMQ, Kafka, and many others.&lt;/li&gt;
-&lt;li&gt;Statsd&lt;/li&gt;
-&lt;li&gt;Nagios: The Monasca Agent can run any Nagio check and convert the results to a metric and send to the Monasca API. Status code and messages are sent as &amp;lsquo;value_meta&amp;rdquo; in the metric.&lt;/li&gt;
-&lt;li&gt;Check_mk&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;We have &lt;a href=&#34;https://review.openstack.org/#/c/213183/&#34;&gt;submitted&lt;/a&gt; to be included into OpenStack and follow OpenStack
+&lt;a href=&#34;https://wiki.openstack.org/wiki/How_To_Contribute&#34;&gt;contribution guidelines&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;While we await our full inclusion into OpenStack our code is hosted as part of stackforge and can be found &lt;a href=&#34;https://github.com/stackforge?query=monasca&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://monasca.io/dev/vagrant/&#34;&gt;Monasca Vagrant&lt;/a&gt; environment is the primary setup used for development of Monasca. More information on testing Monasca can be found
+at our &lt;a href=&#34;http://monasca.io/dev/testing/&#34;&gt;testing page&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>deployment</title>
+      <link>http://monasca.io/root/deployment/</link>
+      <pubDate>Tue, 18 Aug 2015 17:09:52 -0600</pubDate>
+      
+      <guid>http://monasca.io/root/deployment/</guid>
+      <description>&lt;p&gt;Monasca is a system built for large scale deployments. One side effect of this is there are many components in the system each of which is an
+installation in and of itself. The end result of this is that I highly recommend you use a configuration management system to install Monasca.&lt;/p&gt;
+
+&lt;p&gt;The HP Monasca team has published a set of &lt;a href=&#34;http://www.ansible.com/home&#34;&gt;Ansible&lt;/a&gt; roles that can be used to install and configure Monasca on
+Debian/Ubuntu based machines. These roles all are in repos that start with &amp;lsquo;ansible-&amp;rsquo; and are available on github under the
+&lt;a href=&#34;https://github.com/hpcloud-mon?utf8=%E2%9C%93&amp;amp;query=ansible-&#34;&gt;hpcloud-mon organization&lt;/a&gt;. These roles are used in the &lt;a href=&#34;http://monasca.io/dev/vagrant/&#34;&gt;Monasca Vagrant&lt;/a&gt;
+development environment but are also used internally at HP for full HA installations of Monasca.&lt;/p&gt;
+
+&lt;p&gt;In addition to the Ansible roles a &lt;a href=&#34;https://puppetlabs.com/&#34;&gt;Puppet&lt;/a&gt; module is maintained by the Monasca community in the
+&lt;a href=&#34;https://github.com/openstack/puppet-monasca&#34;&gt;puppet-monasca&lt;/a&gt; git repository.&lt;/p&gt;
 </description>
     </item>
     
@@ -218,7 +157,7 @@ Currently, Monasca is hosted in Github under the Stackforge organization, and wi
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
       <guid>http://monasca.io/root/coming-soon/</guid>
-      <description>&lt;p&gt;Stop, that&amp;rsquo;s enough. You&amp;rsquo;re killing me. Monasca will be adding support for the following:&lt;/p&gt;
+      <description>&lt;p&gt;Monasca will be adding support for the following:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Logging: In the style of Loggly, support for an authenticated multi-tenant logging solution is in progress.&lt;/li&gt;
@@ -230,12 +169,29 @@ Currently, Monasca is hosted in Github under the Stackforge organization, and wi
     </item>
     
     <item>
-      <title>develop &amp; deploy</title>
-      <link>http://monasca.io/root/develop-deploy/</link>
-      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
+      <title>demo</title>
+      <link>http://monasca.io/root/demo/</link>
+      <pubDate>Wed, 19 Aug 2015 10:17:37 -0600</pubDate>
       
-      <guid>http://monasca.io/root/develop-deploy/</guid>
-      <description>&lt;p&gt;Want to learn how to develop for Monasca or just deploy Stay-tuned&lt;/p&gt;
+      <guid>http://monasca.io/root/demo/</guid>
+      <description>
+
+&lt;p&gt;The primary demo for environment for Monasca is a Docker Image.  To avoid setting all of Monasca up just to investigate it I have created
+a &lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker&lt;/a&gt; &lt;a href=&#34;https://hub.docker.com/r/monasca/demo/&#34;&gt;demo image&lt;/a&gt; that contains all of the Monasca components.&lt;/p&gt;
+
+&lt;p&gt;This image can be run via &lt;a href=&#34;https://kitematic.com/&#34;&gt;kitematic&lt;/a&gt; or directly in a Docker installation. If running with Docker simply run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker run -d -p 80:80 -p 8080:8080 -p 5000:5000 --name monasca monasca/demo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and the image will download and start. The demo has a keystone user &lt;code&gt;mini-mon&lt;/code&gt; with the password &lt;code&gt;password&lt;/code&gt;. The Monasca horizon plugin is available
+on port 80, the &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt; on port 8080 and the embedded keystone on port 5000. Additionally if you shell into the environment
+a set of env variables is available at &lt;code&gt;/setup/env.sh&lt;/code&gt; so you can simple source this file and begin using the &lt;a href=&#34;http://monasca.io/components/cli&#34;&gt;Monasca CLI&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;alternatives:33d3cedc2d74629a40b36bf8cf252b87&#34;&gt;Alternatives&lt;/h4&gt;
+
+&lt;p&gt;Besides the Docker demo the Monasca uses a &lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;Vagrant&lt;/a&gt; environment for development and this can be used as an alternative
+demo environment. It is a bit more involved to setup but works well, more information at the &lt;a href=&#34;http://monasca.io/dev/vagrant/&#34;&gt;development with vagrant page&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

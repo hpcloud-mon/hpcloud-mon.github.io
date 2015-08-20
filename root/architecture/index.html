@@ -52,26 +52,39 @@
       <div class="col s12">
         <div class="card-panel">
           <h4>architecture</h4>
-          <p><p>Monasca is a highly performant, scalable, fault-tolerant and extensible micro-services messages bus based architecture.</p>
+          <p>
 
-<p>More details will be coming soon.</p>
+<p>Monasca is a highly performant, scalable, fault-tolerant and extensible micro-services messages bus based architecture.</p>
+
+<p>It uses a REST API for high-speed metrics processing and querying and has a streaming alarm engine and notification engine. All of these are linked
+using the messaging system <a href="https://kafka.apache.org/">Kafka</a>. Every component in the system is built with High Availability in mind and can grow
+horizontally to allow for monitoring of very large systems.
+<img src="/img/Monasca-arch-component-diagram.png" alt="Monasca Architecture" /></p>
+
+<h4 id="metrics-alarm-flow:1bf455b3a3c6e1e40be41ef6023b75eb">Metrics/Alarm Flow</h4>
+
+<p>The <a href="/components/api/">Monasca API</a> is the gateway for all interaction with Monasca. In a typical scenario <a href="/components/metrics">metrics</a>
+are collected by the <a href="/components/agent/">Monasca Agent</a> running on a system and sent to the Monasca API. The api then puts the metrics onto the Kafak queue.
+From here the <a href="/components/persister/">Monasca Persister</a> consumes metrics and writes them to our <a href="/components/metrics_db/">Metrics database</a>. The
+<a href="/components/thresh/">Monasca Threshold Engine</a> also consumes the metrics and uses them to evaluate <a href="/components/alarms/">alarms</a>.</p>
+
+<p>At this point the metrics are in our system and can be be retrieved from the Monasca API, either directly or through one of our other components
+such as the Horizon plugin or the <a href="/components/cli">Monasca CLI</a>.</p>
+
+<p>When the threshold engine evaluates the metrics against the alarms it can create alarm state transition events. These are published back onto Kafka
+and are read by both the persister and <a href="/components/notifications/">Notification Engine</a>. The persister simply writes the alarm transitions to the
+DB for future retrieval. The notification engine will send a notification of the configured type for appropriate state transitions.</p>
+
+<p>In addition to the components discussed above we also have a configuration database used for storing information such as alarm definitions and
+notification methods. This db can be either mysql or postgresql.</p>
+
+<p><strong>Future Components</strong></p>
+
+<p>The events and transform engines are actively being worked on and will soon be incorporated. In addition some proof of concept work has been done
+for an Anomaly detection engine.</p>
 </p>
           
         </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s3 m1">
-      
-        <a class="btn-floating btn-large waves-effect waves-light" href="http://monasca.io/root/notifications/"><i class="mdi-navigation-arrow-back"></i></a>
-      
-      </div>
-      <div class="col s6 m10 center">&nbsp</div>
-      <div class="col s3 m1">
-      
-        <a class="btn-floating btn-large waves-effect waves-light" href="http://monasca.io/root/agent/"><i class="mdi-navigation-arrow-forward"></i></a>
-      
       </div>
     </div>
 
@@ -81,8 +94,8 @@
   <footer class="page-footer">
     <div class="footer-copyright">
       <div class="container">
-      © 2015 Hewlett-Packard
-      <div class="right"><a class="grey-text text-lighten-4" href="http://monasca.io">Monasca.io</a></div>
+      © 2015 Hewlett Packard Enterprise
+      <div class="right"><a class="grey-text text-lighten-4" href="http://monasca.io/">Monasca.io</a></div>
       </div>
     </div>
   </footer>

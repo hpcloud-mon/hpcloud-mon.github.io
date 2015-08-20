@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Devs on Monasca</title>
+    <link>http://monasca.io/dev/</link>
+    <description>Recent content in Devs on Monasca</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2015 Hewlett Packard Enterprise</copyright>
+    <lastBuildDate>Wed, 19 Aug 2015 10:20:28 -0600</lastBuildDate>
+    <atom:link href="http://monasca.io/dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Testing Monasca</title>
+      <link>http://monasca.io/dev/testing/</link>
+      <pubDate>Wed, 19 Aug 2015 10:20:28 -0600</pubDate>
+      
+      <guid>http://monasca.io/dev/testing/</guid>
+      <description>&lt;p&gt;As part of OpenStack the primary testing for Monasca is done using the &lt;a href=&#34;https://wiki.openstack.org/wiki/Testing&#34;&gt;OpenStack testing&lt;/a&gt;. Monasca code
+runs through the standard &lt;a href=&#34;http://docs.openstack.org/infra/system-config/&#34;&gt;OpenStack CI&lt;/a&gt;. Additionally work to integrate
+&lt;a href=&#34;https://github.com/hpcloud-mon/monasca-tempest&#34;&gt;Monasca into tempest&lt;/a&gt; is ongoing.&lt;/p&gt;
+
+&lt;p&gt;Some additional test scripts used in our test environment including an experimental CI system is available in the
+&lt;a href=&#34;https://github.com/hpcloud-mon/monasca-ci&#34;&gt;Monasca CI repository&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vagrant Development Environment</title>
+      <link>http://monasca.io/dev/vagrant/</link>
+      <pubDate>Wed, 19 Aug 2015 10:20:22 -0600</pubDate>
+      
+      <guid>http://monasca.io/dev/vagrant/</guid>
+      <description>&lt;p&gt;The Monasca team has built a &lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;Vagrant&lt;/a&gt; based development environment which is especially helpful for any development
+on the server stack of Monasca. This environment and extensive instructions on running it are found at the github repo
+&lt;a href=&#34;https://github.com/stackforge/monasca-vagrant&#34;&gt;monasca-vagrant&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The environment installs the latest Monasca code and all dependencies into two VMs. You can then turn off components as needed for development. There are some
+limitations to this environment, most notably it is a non-HA environment and initial downloads can take awhile.&lt;/p&gt;
+
+&lt;p&gt;If you are simply looking for an API endpoint and have no need to develop on the server stack of Monasca another options is to run the
+&lt;a href=&#34;http://monasca.io/root/demo/&#34;&gt;Monasca Demo&lt;/a&gt; and use its api. This should be simpler to start up and experience less churn with the normal development process.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

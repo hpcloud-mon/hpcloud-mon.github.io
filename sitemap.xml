@@ -3,8 +3,98 @@
   
   <url>
     <loc>http://monasca.io/</loc>
-    <lastmod>2015-08-14T16:42:17-06:00</lastmod>
+    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/components/alarms/</loc>
+    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/components/metrics/</loc>
+    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/root/about/</loc>
+    <lastmod>2015-08-19T18:32:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/operations/errors/</loc>
+    <lastmod>2015-08-19T10:12:42-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/components/api/</loc>
+    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/root/architecture/</loc>
+    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/root/dev/</loc>
+    <lastmod>2015-08-18T17:04:58-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/root/deployment/</loc>
+    <lastmod>2015-08-18T17:09:52-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/components/notifications/</loc>
+    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/components/agent/</loc>
+    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/root/coming-soon/</loc>
+    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/components/thresh/</loc>
+    <lastmod>2015-08-19T15:23:25-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/components/metrics_db/</loc>
+    <lastmod>2015-08-19T15:23:18-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/components/persister/</loc>
+    <lastmod>2015-08-19T15:23:05-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/components/cli/</loc>
+    <lastmod>2015-08-19T15:19:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/dev/testing/</loc>
+    <lastmod>2015-08-19T10:20:28-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/dev/vagrant/</loc>
+    <lastmod>2015-08-19T10:20:22-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monasca.io/root/demo/</loc>
+    <lastmod>2015-08-19T10:17:37-06:00</lastmod>
   </url>
   
   <url>
@@ -15,51 +105,6 @@
   <url>
     <loc>http://monasca.io/operations/logs/</loc>
     <lastmod>2015-08-14T16:27:56-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://monasca.io/root/about/</loc>
-    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://monasca.io/root/api/</loc>
-    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://monasca.io/root/metrics/</loc>
-    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://monasca.io/root/alarms/</loc>
-    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://monasca.io/root/notifications/</loc>
-    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://monasca.io/root/architecture/</loc>
-    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://monasca.io/root/agent/</loc>
-    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://monasca.io/root/coming-soon/</loc>
-    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://monasca.io/root/develop-deploy/</loc>
-    <lastmod>2015-08-07T18:32:00-06:00</lastmod>
   </url>
   
 </urlset>
