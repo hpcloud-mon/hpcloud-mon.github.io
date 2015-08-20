@@ -16,7 +16,7 @@
 <body>
   <ul id="slide-out" class="side-nav">
     <li><a href="http://monasca.io/"><i class="mdi-action-home left"></i>Home<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
-    <li><a href="http://monasca.io//categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+    <li><a href="/categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
   </ul>
   <div id="index-banner" class="parallax-container">
   <a data-activates="slide-out" class="btn-floating button-collapse" style="top: 5px; left: 5px;"><i class="mdi-navigation-menu"></i></a>
@@ -66,7 +66,7 @@ horizontally to allow for monitoring of very large systems.
 <p>The <a href="/components/api/">Monasca API</a> is the gateway for all interaction with Monasca. In a typical scenario <a href="/components/metrics">metrics</a>
 are collected by the <a href="/components/agent/">Monasca Agent</a> running on a system and sent to the Monasca API. The api then puts the metrics onto the Kafak queue.
 From here the <a href="/components/persister/">Monasca Persister</a> consumes metrics and writes them to our <a href="/components/metrics_db/">Metrics database</a>. The
-<a href="/components/thresh/">Monasca Threshold Engine</a> also consumes the metrics and uses them to evaluate <a href="/components/alarms/">alarms</a>.</p>
+<a href="/components/alarms/">Monasca Threshold Engine</a> also consumes the metrics and uses them to evaluate <a href="/components/alarms/">alarms</a>.</p>
 
 <p>At this point the metrics are in our system and can be be retrieved from the Monasca API, either directly or through one of our other components
 such as the Horizon plugin or the <a href="/components/cli">Monasca CLI</a>.</p>

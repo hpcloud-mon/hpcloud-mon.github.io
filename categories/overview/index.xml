@@ -95,7 +95,7 @@ horizontally to allow for monitoring of very large systems.
 &lt;p&gt;The &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt; is the gateway for all interaction with Monasca. In a typical scenario &lt;a href=&#34;http://monasca.io/components/metrics&#34;&gt;metrics&lt;/a&gt;
 are collected by the &lt;a href=&#34;http://monasca.io/components/agent/&#34;&gt;Monasca Agent&lt;/a&gt; running on a system and sent to the Monasca API. The api then puts the metrics onto the Kafak queue.
 From here the &lt;a href=&#34;http://monasca.io/components/persister/&#34;&gt;Monasca Persister&lt;/a&gt; consumes metrics and writes them to our &lt;a href=&#34;http://monasca.io/components/metrics_db/&#34;&gt;Metrics database&lt;/a&gt;. The
-&lt;a href=&#34;http://monasca.io/components/thresh/&#34;&gt;Monasca Threshold Engine&lt;/a&gt; also consumes the metrics and uses them to evaluate &lt;a href=&#34;http://monasca.io/components/alarms/&#34;&gt;alarms&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;http://monasca.io/components/alarms/&#34;&gt;Monasca Threshold Engine&lt;/a&gt; also consumes the metrics and uses them to evaluate &lt;a href=&#34;http://monasca.io/components/alarms/&#34;&gt;alarms&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;At this point the metrics are in our system and can be be retrieved from the Monasca API, either directly or through one of our other components
 such as the Horizon plugin or the &lt;a href=&#34;http://monasca.io/components/cli&#34;&gt;Monasca CLI&lt;/a&gt;.&lt;/p&gt;

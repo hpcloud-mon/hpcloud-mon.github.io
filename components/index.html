@@ -16,7 +16,7 @@
 <body>
   <ul id="slide-out" class="side-nav">
     <li><a href="http://monasca.io/"><i class="mdi-action-home left"></i>Home<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
-    <li><a href="http://monasca.io//categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+    <li><a href="/categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
   </ul>
   <div id="index-banner" class="parallax-container">
   <a data-activates="slide-out" class="btn-floating button-collapse" style="top: 5px; left: 5px;"><i class="mdi-navigation-menu"></i></a>
@@ -54,8 +54,12 @@
   <div class="col m4 s12">
     <div class="card-panel">
       <h4><a href="http://monasca.io/components/alarms/">alarms</a></h4>
-      <p> <p>A real-time in-memory streaming thresholding engine capable of processing hundreds of thousands of metrics.</p>
+      <p> <p>Included as part of Monasca is a real-time in-memory streaming thresholding engine capable of processing hundreds of thousands of metrics.</p>
  </p>
+      
+        <div class="read-more-link">
+          <a href="/components/alarms/">Read More…</a>
+        </div>
       
     </div>
   </div>
@@ -64,7 +68,7 @@
   <div class="col m4 s12">
     <div class="card-panel">
       <h4><a href="http://monasca.io/components/metrics/">metrics</a></h4>
-      <p> <p>Provides an API for real-time storage and retrieval of metrics and statistics.</p>
+      <p> <p>Monasca provides an API for real-time storage and retrieval of metrics and statistics.</p>
  </p>
       
         <div class="read-more-link">
@@ -109,7 +113,7 @@
   <div class="col m4 s12">
     <div class="card-panel">
       <h4><a href="http://monasca.io/components/agent/">agent</a></h4>
-      <p> <p>Monasca supports an optional monitoring agent that is written in Python.</p>
+      <p> <p>Monasca supports an optional monitoring <a href="https://github.com/stackforge/monasca-agent">agent</a> that is written in Python.</p>
  </p>
       
         <div class="read-more-link">
@@ -122,8 +126,13 @@
   
   <div class="col m4 s12">
     <div class="card-panel">
-      <h4><a href="http://monasca.io/components/thresh/">thresh</a></h4>
-      <p> TBD </p>
+      <h4><a href="http://monasca.io/components/metrics_db/">metrics_db</a></h4>
+      <p> <p>Metrics and alarm state transitions are persisted to a Metrics DB from which they can be retrieved at any time.</p>
+ </p>
+      
+        <div class="read-more-link">
+          <a href="/components/metrics_db/">Read More…</a>
+        </div>
       
     </div>
   </div>
@@ -134,17 +143,14 @@
   
   <div class="col m4 s12">
     <div class="card-panel">
-      <h4><a href="http://monasca.io/components/metrics_db/">metrics_db</a></h4>
-      <p> TBD </p>
-      
-    </div>
-  </div>
-
-  
-  <div class="col m4 s12">
-    <div class="card-panel">
       <h4><a href="http://monasca.io/components/persister/">persister</a></h4>
-      <p> TBD </p>
+      <p> <p>The <a href="https://github.com/stackforge/monasca-persister">Monasca persister</a> is responsible for reading metrics and alarm state transitions from
+<a href="https://kafka.apache.org/">Kafka</a> and writing to the <a href="/components/metrics_db/">metrics DB</a>.</p>
+ </p>
+      
+        <div class="read-more-link">
+          <a href="/components/persister/">Read More…</a>
+        </div>
       
     </div>
   </div>
@@ -153,7 +159,12 @@
   <div class="col m4 s12">
     <div class="card-panel">
       <h4><a href="http://monasca.io/components/cli/">cli</a></h4>
-      <p> TBD </p>
+      <p> <p><a href="https://github.com/stackforge/python-monascaclient">python-monascaclient</a> is the Monasca CLI built in the same style as other OpenStack CLI&rsquo;s.</p>
+ </p>
+      
+        <div class="read-more-link">
+          <a href="/components/cli/">Read More…</a>
+        </div>
       
     </div>
   </div>

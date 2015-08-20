@@ -16,7 +16,7 @@
 <body>
   <ul id="slide-out" class="side-nav">
     <li><a href="http://monasca.io/"><i class="mdi-action-home left"></i>Home<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
-    <li><a href="http://monasca.io//categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+    <li><a href="/categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
   </ul>
   <div id="index-banner" class="parallax-container">
   <a data-activates="slide-out" class="btn-floating button-collapse" style="top: 5px; left: 5px;"><i class="mdi-navigation-menu"></i></a>
@@ -52,7 +52,17 @@
       <div class="col s12">
         <div class="card-panel">
           <h4>cli</h4>
-          <p><p>TBD</p>
+          <p><p><a href="https://github.com/stackforge/python-monascaclient">python-monascaclient</a> is the Monasca CLI built in the same style as other OpenStack CLI&rsquo;s.
+The CLI provides commands for a full range of <a href="/components/api/">Monasca API</a> methods.</p>
+
+<p>Like most OpenStack CLI&rsquo;s all that is needed to run it a keystone user, password and endpoint. These can be specified as arguments or using the standard
+environment variables.</p>
+
+<p>In addition it can be used as a python module to provide a standard python interface for interacting with the <a href="/components/api/">Monasca API</a>.
+It is used in this way by the <a href="/components/agent/">Monasca Agent</a> and so is installed wherever the agent is installed.</p>
+
+<p>Run the CLI with <code>-h</code> or refer to the <a href="https://github.com/stackforge/python-monascaclient/blob/master/README.rst">README</a> for more
+details on using the Monasca CLI.</p>
 </p>
           
         </div>

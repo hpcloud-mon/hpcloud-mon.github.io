@@ -16,7 +16,7 @@
 <body>
   <ul id="slide-out" class="side-nav">
     <li><a href="http://monasca.io/"><i class="mdi-action-home left"></i>Home<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
-    <li><a href="http://monasca.io//categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+    <li><a href="/categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
   </ul>
   <div id="index-banner" class="parallax-container">
   <a data-activates="slide-out" class="btn-floating button-collapse" style="top: 5px; left: 5px;"><i class="mdi-navigation-menu"></i></a>
@@ -52,7 +52,12 @@
       <div class="col s12">
         <div class="card-panel">
           <h4>persister</h4>
-          <p><p>TBD</p>
+          <p><p>The <a href="https://github.com/stackforge/monasca-persister">Monasca persister</a> is responsible for reading metrics and alarm state transitions from
+<a href="https://kafka.apache.org/">Kafka</a> and writing to the <a href="/components/metrics_db/">metrics DB</a>. Though this is a relatively simple task it must
+be done reliably at high speed with HA.</p>
+
+<p>Multiple persisters can run simultaneously utilizing different partitions within a Kafka topic to share the
+load between all instances. As instances drop off or come up the load is rebalanced between all available persisters.</p>
 </p>
           
         </div>

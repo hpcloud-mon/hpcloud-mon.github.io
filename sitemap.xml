@@ -63,11 +63,6 @@
   </url>
   
   <url>
-    <loc>http://monasca.io/components/thresh/</loc>
-    <lastmod>2015-08-19T15:23:25-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://monasca.io/components/metrics_db/</loc>
     <lastmod>2015-08-19T15:23:18-06:00</lastmod>
   </url>

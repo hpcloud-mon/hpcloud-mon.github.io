@@ -16,7 +16,7 @@
 <body>
   <ul id="slide-out" class="side-nav">
     <li><a href="http://monasca.io/"><i class="mdi-action-home left"></i>Home<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
-    <li><a href="http://monasca.io//categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+    <li><a href="/categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
   </ul>
   <div id="index-banner" class="parallax-container">
   <a data-activates="slide-out" class="btn-floating button-collapse" style="top: 5px; left: 5px;"><i class="mdi-navigation-menu"></i></a>
@@ -52,7 +52,14 @@
       <div class="col s12">
         <div class="card-panel">
           <h4>metrics_db</h4>
-          <p><p>TBD</p>
+          <p><p>Metrics and alarm state transitions are persisted to a Metrics DB from which they can be retrieved at any time.
+As Monasca is built for scale a specific database that can handle the high metrics load is needed for this use case.</p>
+
+<p>Monasca supports two different metrics databases, <a href="http://www.vertica.com/">Vertica</a> and <a href="https://influxdb.com/">InfluxDB</a>. The two components
+that interact with the Metrics DB are the <a href="/components/persister/">persister</a> and the <a href="/components/api/">API</a>. These can both be configured to
+use either database.</p>
+
+<p>For both databases the schema used is found in the <a href="http://www.ansible.com/home">Ansible</a> role, <a href="https://github.com/hpcloud-mon/ansible-monasca-schema">monasca-schema</a>.</p>
 </p>
           
         </div>

@@ -16,7 +16,7 @@
 <body>
   <ul id="slide-out" class="side-nav">
     <li><a href="http://monasca.io/"><i class="mdi-action-home left"></i>Home<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
-    <li><a href="http://monasca.io//categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
+    <li><a href="/categories"><i class="mdi-action-perm-media left"></i>Categories<i class="mdi-hardware-keyboard-arrow-right right"></i></a></li>
   </ul>
   <div id="index-banner" class="parallax-container">
   <a data-activates="slide-out" class="btn-floating button-collapse" style="top: 5px; left: 5px;"><i class="mdi-navigation-menu"></i></a>
@@ -52,9 +52,13 @@
       <div class="col s12">
         <div class="card-panel">
           <h4>notifications</h4>
-          <p><p>Notifications can be sent when alarm state transition occurs.  Monasca supports and integrated notification engine that allows notification methods to be created, such as email contacts, and associated with alarms. When alarm state transitions occur notifications can be sent to specified contacts and services.</p>
+          <p><p>Notifications can be sent when alarm state transition occurs.  Monasca supports an integrated
+<a href="https://github.com/stackforge/monasca-notification">notification engine</a> that can send various notification types.
+<a href="https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms">Alarm Definitions</a> can be associated
+with <a href="https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#notification-methods">notification methods</a> for
+transitions to the states, OK, Alarm or Undetermined.</p>
 
-<p>Support the following type of notification methods:</p>
+<p>Notification methods of the following types are supported:</p>
 
 <ul>
 <li>Email</li>

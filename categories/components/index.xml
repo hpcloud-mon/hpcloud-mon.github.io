@@ -16,14 +16,25 @@
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
       <guid>http://monasca.io/components/agent/</guid>
-      <description>&lt;p&gt;Monasca supports an optional monitoring agent that is written in Python.  The agent supports the following checks and metrics:&lt;/p&gt;
+      <description>&lt;p&gt;Monasca supports an optional monitoring &lt;a href=&#34;https://github.com/stackforge/monasca-agent&#34;&gt;agent&lt;/a&gt; that is written in Python.
+The agent is a python program that runs on systems and runs various checks then sends the data on to the &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt;.
+Checks the agent can run include:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;System metrics, such as cpu, memory, network, disk and file-system utilization.&lt;/li&gt;
-&lt;li&gt;Service metrics, such as MySQL, RabbitMQ, Kafka, and many others.&lt;/li&gt;
-&lt;li&gt;Statsd&lt;/li&gt;
-&lt;li&gt;Nagios: The Monasca Agent can run any Nagio check and convert the results to a metric and send to the Monasca API. Status code and messages are sent as &amp;lsquo;value_meta&amp;rdquo; in the metric.&lt;/li&gt;
-&lt;li&gt;Check_mk&lt;/li&gt;
+&lt;li&gt;System metrics: cpu, memory, network, disk and file-system utilization.&lt;/li&gt;
+&lt;li&gt;Service metrics: The agent supports many plugins such as MySQL, RabbitMQ, Kafka, and many others.&lt;/li&gt;
+&lt;li&gt;Statsd: statsd metrics can be sent locally to the agent which will format and send on to the Monasca API.&lt;/li&gt;
+&lt;li&gt;Nagios: The Monasca Agent can run any Nagios check and convert the results to a metric and send to the Monasca API. Status code and messages are sent as &amp;lsquo;value_meta&amp;rdquo; in the metric.&lt;/li&gt;
+&lt;li&gt;Check_mk: Similar to Nagios checks the agent can run check_mk checks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;More details on the Agent can be found at these pages:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/stackforge/monasca-agent/blob/master/docs/Agent.md&#34;&gt;Architecture and Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/stackforge/monasca-agent/blob/master/docs/Plugins.md&#34;&gt;Agent Plugins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/stackforge/monasca-agent/blob/master/docs/Customizations.md&#34;&gt;Customizing the Agent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/stackforge/monasca-agent/blob/master/docs/MonascaMetrics.md&#34;&gt;Metrics and the Agent&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -34,7 +45,13 @@
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
       <guid>http://monasca.io/components/alarms/</guid>
-      <description>&lt;p&gt;A real-time in-memory streaming thresholding engine capable of processing hundreds of thousands of metrics.&lt;/p&gt;
+      <description>&lt;p&gt;Included as part of Monasca is a real-time in-memory streaming thresholding engine capable of processing hundreds of thousands of metrics.&lt;br /&gt;
+The &lt;a href=&#34;https://github.com/stackforge/monasca-thresh&#34;&gt;threshold engine&lt;/a&gt; is based on &lt;a href=&#34;http://storm.apache.org/&#34;&gt;Apache Storm&lt;/a&gt; and written in Java.&lt;/p&gt;
+
+&lt;p&gt;As metrics come into our system they are read from Kafka by the threshold engine then evaluated against any configured
+&lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms&#34;&gt;alarm definitions&lt;/a&gt;. Alarms are created
+automatically, evaluated and sent to the proper state as metrics flow through the system. When any alarm changes state an alarm-state-transition message
+is added to Kafka so other processes can consume this event.&lt;/p&gt;
 </description>
     </item>
     
@@ -72,7 +89,7 @@
       <guid>http://monasca.io/components/metrics/</guid>
       <description>
 
-&lt;p&gt;Provides an API for real-time storage and retrieval of metrics and statistics.  The main features of metrics are as follows:&lt;/p&gt;
+&lt;p&gt;Monasca provides an API for real-time storage and retrieval of metrics and statistics.  The main features of metrics are as follows:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Storage and retrieval of metrics.&lt;/li&gt;
@@ -115,6 +132,8 @@
 	}
     }
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;a href=&#34;http://monasca.io/components/agent/&#34;&gt;Agent&lt;/a&gt; documentation has more information on &lt;a href=&#34;https://github.com/stackforge/monasca-agent/blob/master/docs/MonascaMetrics.md&#34;&gt;metrics.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -124,9 +143,13 @@
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
       <guid>http://monasca.io/components/notifications/</guid>
-      <description>&lt;p&gt;Notifications can be sent when alarm state transition occurs.  Monasca supports and integrated notification engine that allows notification methods to be created, such as email contacts, and associated with alarms. When alarm state transitions occur notifications can be sent to specified contacts and services.&lt;/p&gt;
+      <description>&lt;p&gt;Notifications can be sent when alarm state transition occurs.  Monasca supports an integrated
+&lt;a href=&#34;https://github.com/stackforge/monasca-notification&#34;&gt;notification engine&lt;/a&gt; that can send various notification types.
+&lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms&#34;&gt;Alarm Definitions&lt;/a&gt; can be associated
+with &lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#notification-methods&#34;&gt;notification methods&lt;/a&gt; for
+transitions to the states, OK, Alarm or Undetermined.&lt;/p&gt;
 
-&lt;p&gt;Support the following type of notification methods:&lt;/p&gt;
+&lt;p&gt;Notification methods of the following types are supported:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Email&lt;/li&gt;
@@ -137,22 +160,19 @@
     </item>
     
     <item>
-      <title>thresh</title>
-      <link>http://monasca.io/components/thresh/</link>
-      <pubDate>Wed, 19 Aug 2015 15:23:25 -0600</pubDate>
-      
-      <guid>http://monasca.io/components/thresh/</guid>
-      <description>&lt;p&gt;TBD&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>metrics_db</title>
       <link>http://monasca.io/components/metrics_db/</link>
       <pubDate>Wed, 19 Aug 2015 15:23:18 -0600</pubDate>
       
       <guid>http://monasca.io/components/metrics_db/</guid>
-      <description>&lt;p&gt;TBD&lt;/p&gt;
+      <description>&lt;p&gt;Metrics and alarm state transitions are persisted to a Metrics DB from which they can be retrieved at any time.
+As Monasca is built for scale a specific database that can handle the high metrics load is needed for this use case.&lt;/p&gt;
+
+&lt;p&gt;Monasca supports two different metrics databases, &lt;a href=&#34;http://www.vertica.com/&#34;&gt;Vertica&lt;/a&gt; and &lt;a href=&#34;https://influxdb.com/&#34;&gt;InfluxDB&lt;/a&gt;. The two components
+that interact with the Metrics DB are the &lt;a href=&#34;http://monasca.io/components/persister/&#34;&gt;persister&lt;/a&gt; and the &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;API&lt;/a&gt;. These can both be configured to
+use either database.&lt;/p&gt;
+
+&lt;p&gt;For both databases the schema used is found in the &lt;a href=&#34;http://www.ansible.com/home&#34;&gt;Ansible&lt;/a&gt; role, &lt;a href=&#34;https://github.com/hpcloud-mon/ansible-monasca-schema&#34;&gt;monasca-schema&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -162,7 +182,12 @@
       <pubDate>Wed, 19 Aug 2015 15:23:05 -0600</pubDate>
       
       <guid>http://monasca.io/components/persister/</guid>
-      <description>&lt;p&gt;TBD&lt;/p&gt;
+      <description>&lt;p&gt;The &lt;a href=&#34;https://github.com/stackforge/monasca-persister&#34;&gt;Monasca persister&lt;/a&gt; is responsible for reading metrics and alarm state transitions from
+&lt;a href=&#34;https://kafka.apache.org/&#34;&gt;Kafka&lt;/a&gt; and writing to the &lt;a href=&#34;http://monasca.io/components/metrics_db/&#34;&gt;metrics DB&lt;/a&gt;. Though this is a relatively simple task it must
+be done reliably at high speed with HA.&lt;/p&gt;
+
+&lt;p&gt;Multiple persisters can run simultaneously utilizing different partitions within a Kafka topic to share the
+load between all instances. As instances drop off or come up the load is rebalanced between all available persisters.&lt;/p&gt;
 </description>
     </item>
     
@@ -172,7 +197,17 @@
       <pubDate>Wed, 19 Aug 2015 15:19:37 -0600</pubDate>
       
       <guid>http://monasca.io/components/cli/</guid>
-      <description>&lt;p&gt;TBD&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/stackforge/python-monascaclient&#34;&gt;python-monascaclient&lt;/a&gt; is the Monasca CLI built in the same style as other OpenStack CLI&amp;rsquo;s.
+The CLI provides commands for a full range of &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt; methods.&lt;/p&gt;
+
+&lt;p&gt;Like most OpenStack CLI&amp;rsquo;s all that is needed to run it a keystone user, password and endpoint. These can be specified as arguments or using the standard
+environment variables.&lt;/p&gt;
+
+&lt;p&gt;In addition it can be used as a python module to provide a standard python interface for interacting with the &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt;.
+It is used in this way by the &lt;a href=&#34;http://monasca.io/components/agent/&#34;&gt;Monasca Agent&lt;/a&gt; and so is installed wherever the agent is installed.&lt;/p&gt;
+
+&lt;p&gt;Run the CLI with &lt;code&gt;-h&lt;/code&gt; or refer to the &lt;a href=&#34;https://github.com/stackforge/python-monascaclient/blob/master/README.rst&#34;&gt;README&lt;/a&gt; for more
+details on using the Monasca CLI.&lt;/p&gt;
 </description>
     </item>
     
