@@ -12,10 +12,10 @@
     
     <item>
       <title>deployment</title>
-      <link>http://monasca.io/root/deployment/</link>
+      <link>http://monasca.io/operations/deployment/</link>
       <pubDate>Tue, 18 Aug 2015 17:09:52 -0600</pubDate>
       
-      <guid>http://monasca.io/root/deployment/</guid>
+      <guid>http://monasca.io/operations/deployment/</guid>
       <description>&lt;p&gt;Monasca is a system built for large scale deployments. One side effect of this is there are many components in the system each of which is an
 installation in and of itself. The end result of this is that I highly recommend you use a configuration management system to install Monasca.&lt;/p&gt;
 

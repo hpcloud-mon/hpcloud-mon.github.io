@@ -166,6 +166,36 @@ Currently, Monasca is hosted in Github under the Stackforge organization, and wi
     </item>
     
     <item>
+      <title>features</title>
+      <link>http://monasca.io/root/features/</link>
+      <pubDate>Fri, 21 Aug 2015 09:04:14 -0600</pubDate>
+      
+      <guid>http://monasca.io/root/features/</guid>
+      <description>&lt;p&gt;Monasca is designed to monitor a modern cloud infrastructure which is dynamic and large, these features have been designed with that in mind:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt; is a REST API used for all interaction with the server stack providing easy extensibility.&lt;/li&gt;
+&lt;li&gt;All components in the system are designed for High Availability and Scale. Each component can be horizontally scaled as needed and our components
+are highly performant. Most notably our use of &lt;a href=&#34;https://kafka.apache.org/&#34;&gt;Kafka&lt;/a&gt;, the &lt;a href=&#34;http://monasca.io/components/persister/&#34;&gt;Monasca persister&lt;/a&gt; and our use of
+a dedicated &lt;a href=&#34;http://monasca.io/components/metrics_db/&#34;&gt;metrics DB&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Our system can dynamically handle infrastructure changes. There is no need to pre-register metrics before submitting,
+&lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms&#34;&gt;alarm definitions&lt;/a&gt; provide dynamic alarm
+creation based on the metrics being received and dimensions in our &lt;a href=&#34;http://monasca.io/components/metrics&#34;&gt;metrics&lt;/a&gt; provide a rich way to identify components and infrastructure.&lt;/li&gt;
+&lt;li&gt;Monasca is Multi-tenant and authenticated. Metrics are submitted and authenticated using &lt;a href=&#34;http://docs.openstack.org/developer/keystone/&#34;&gt;Keystone&lt;/a&gt;
+and stored associated with a tenant ID. This enables not only Operator monitoring but also Monitoring as a Service use cases.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;http://monasca.io/components/agent/&#34;&gt;Monasca agent&lt;/a&gt; is highly extensible with out of the box support for monitoring of many services as well as supporting
+existing Nagios checks and statsd metrics.&lt;/li&gt;
+&lt;li&gt;Our system is fully open source under the Apache license.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://monasca.io/components/notifications/&#34;&gt;Notifications&lt;/a&gt; can be sent using a variety of methods including email, pagerduty and generic webhooks for integrating
+with other systems.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://monasca.io/components/alarms/&#34;&gt;Thresholding on alarming&lt;/a&gt; on metrics is done real-time with compound alarms described using a simple expressive grammar
+composed of alarm sub-expressions and logical operators.&lt;/li&gt;
+&lt;li&gt;The overall architecture is a micro-services based bus architecture that allows for &lt;a href=&#34;http://monasca.io/root/coming-soon&#34;&gt;easy extensibility&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>api</title>
       <link>http://monasca.io/components/api/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
@@ -188,6 +218,25 @@ Currently, Monasca is hosted in Github under the Stackforge organization, and wi
 &lt;/ul&gt;
 
 &lt;p&gt;Refer to the &lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md&#34;&gt;full API spec&lt;/a&gt; for more info.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>deployment</title>
+      <link>http://monasca.io/operations/deployment/</link>
+      <pubDate>Tue, 18 Aug 2015 17:09:52 -0600</pubDate>
+      
+      <guid>http://monasca.io/operations/deployment/</guid>
+      <description>&lt;p&gt;Monasca is a system built for large scale deployments. One side effect of this is there are many components in the system each of which is an
+installation in and of itself. The end result of this is that I highly recommend you use a configuration management system to install Monasca.&lt;/p&gt;
+
+&lt;p&gt;The HP Monasca team has published a set of &lt;a href=&#34;http://www.ansible.com/home&#34;&gt;Ansible&lt;/a&gt; roles that can be used to install and configure Monasca on
+Debian/Ubuntu based machines. These roles all are in repos that start with &amp;lsquo;ansible-&amp;rsquo; and are available on github under the
+&lt;a href=&#34;https://github.com/hpcloud-mon?utf8=%E2%9C%93&amp;amp;query=ansible-&#34;&gt;hpcloud-mon organization&lt;/a&gt;. These roles are used in the &lt;a href=&#34;http://monasca.io/dev/vagrant/&#34;&gt;Monasca Vagrant&lt;/a&gt;
+development environment but are also used internally at HP for full HA installations of Monasca.&lt;/p&gt;
+
+&lt;p&gt;In addition to the Ansible roles a &lt;a href=&#34;https://puppetlabs.com/&#34;&gt;Puppet&lt;/a&gt; module is maintained by the Monasca community in the
+&lt;a href=&#34;https://github.com/openstack/puppet-monasca&#34;&gt;puppet-monasca&lt;/a&gt; git repository.&lt;/p&gt;
 </description>
     </item>
     
@@ -231,6 +280,28 @@ for an Anomaly detection engine.&lt;/p&gt;
     </item>
     
     <item>
+      <title>notifications</title>
+      <link>http://monasca.io/components/notifications/</link>
+      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
+      
+      <guid>http://monasca.io/components/notifications/</guid>
+      <description>&lt;p&gt;Notifications can be sent when alarm state transition occurs.  Monasca supports an integrated
+&lt;a href=&#34;https://github.com/stackforge/monasca-notification&#34;&gt;notification engine&lt;/a&gt; that can send various notification types.
+&lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms&#34;&gt;Alarm Definitions&lt;/a&gt; can be associated
+with &lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#notification-methods&#34;&gt;notification methods&lt;/a&gt; for
+transitions to the states, OK, Alarm or Undetermined.&lt;/p&gt;
+
+&lt;p&gt;Notification methods of the following types are supported:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Email&lt;/li&gt;
+&lt;li&gt;PagerDuty&lt;/li&gt;
+&lt;li&gt;Webhooks&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>dev</title>
       <link>http://monasca.io/root/dev/</link>
       <pubDate>Tue, 18 Aug 2015 17:04:58 -0600</pubDate>
@@ -256,47 +327,6 @@ see the &lt;a href=&#34;https://launchpad.net/~monasca&#34;&gt;team page&lt;/a&g
 
 &lt;p&gt;The &lt;a href=&#34;http://monasca.io/dev/vagrant/&#34;&gt;Monasca Vagrant&lt;/a&gt; environment is the primary setup used for development of Monasca. More information on testing Monasca can be found
 at our &lt;a href=&#34;http://monasca.io/dev/testing/&#34;&gt;testing page&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>deployment</title>
-      <link>http://monasca.io/root/deployment/</link>
-      <pubDate>Tue, 18 Aug 2015 17:09:52 -0600</pubDate>
-      
-      <guid>http://monasca.io/root/deployment/</guid>
-      <description>&lt;p&gt;Monasca is a system built for large scale deployments. One side effect of this is there are many components in the system each of which is an
-installation in and of itself. The end result of this is that I highly recommend you use a configuration management system to install Monasca.&lt;/p&gt;
-
-&lt;p&gt;The HP Monasca team has published a set of &lt;a href=&#34;http://www.ansible.com/home&#34;&gt;Ansible&lt;/a&gt; roles that can be used to install and configure Monasca on
-Debian/Ubuntu based machines. These roles all are in repos that start with &amp;lsquo;ansible-&amp;rsquo; and are available on github under the
-&lt;a href=&#34;https://github.com/hpcloud-mon?utf8=%E2%9C%93&amp;amp;query=ansible-&#34;&gt;hpcloud-mon organization&lt;/a&gt;. These roles are used in the &lt;a href=&#34;http://monasca.io/dev/vagrant/&#34;&gt;Monasca Vagrant&lt;/a&gt;
-development environment but are also used internally at HP for full HA installations of Monasca.&lt;/p&gt;
-
-&lt;p&gt;In addition to the Ansible roles a &lt;a href=&#34;https://puppetlabs.com/&#34;&gt;Puppet&lt;/a&gt; module is maintained by the Monasca community in the
-&lt;a href=&#34;https://github.com/openstack/puppet-monasca&#34;&gt;puppet-monasca&lt;/a&gt; git repository.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>notifications</title>
-      <link>http://monasca.io/components/notifications/</link>
-      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
-      
-      <guid>http://monasca.io/components/notifications/</guid>
-      <description>&lt;p&gt;Notifications can be sent when alarm state transition occurs.  Monasca supports an integrated
-&lt;a href=&#34;https://github.com/stackforge/monasca-notification&#34;&gt;notification engine&lt;/a&gt; that can send various notification types.
-&lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms&#34;&gt;Alarm Definitions&lt;/a&gt; can be associated
-with &lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#notification-methods&#34;&gt;notification methods&lt;/a&gt; for
-transitions to the states, OK, Alarm or Undetermined.&lt;/p&gt;
-
-&lt;p&gt;Notification methods of the following types are supported:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Email&lt;/li&gt;
-&lt;li&gt;PagerDuty&lt;/li&gt;
-&lt;li&gt;Webhooks&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
@@ -395,21 +425,6 @@ It is used in this way by the &lt;a href=&#34;http://monasca.io/components/agent
 
 &lt;p&gt;Run the CLI with &lt;code&gt;-h&lt;/code&gt; or refer to the &lt;a href=&#34;https://github.com/stackforge/python-monascaclient/blob/master/README.rst&#34;&gt;README&lt;/a&gt; for more
 details on using the Monasca CLI.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Testing Monasca</title>
-      <link>http://monasca.io/dev/testing/</link>
-      <pubDate>Wed, 19 Aug 2015 10:20:28 -0600</pubDate>
-      
-      <guid>http://monasca.io/dev/testing/</guid>
-      <description>&lt;p&gt;As part of OpenStack the primary testing for Monasca is done using the &lt;a href=&#34;https://wiki.openstack.org/wiki/Testing&#34;&gt;OpenStack testing&lt;/a&gt;. Monasca code
-runs through the standard &lt;a href=&#34;http://docs.openstack.org/infra/system-config/&#34;&gt;OpenStack CI&lt;/a&gt;. Additionally work to integrate
-&lt;a href=&#34;https://github.com/hpcloud-mon/monasca-tempest&#34;&gt;Monasca into tempest&lt;/a&gt; is ongoing.&lt;/p&gt;
-
-&lt;p&gt;Some additional test scripts used in our test environment including an experimental CI system is available in the
-&lt;a href=&#34;https://github.com/hpcloud-mon/monasca-ci&#34;&gt;Monasca CI repository&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
