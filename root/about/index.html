@@ -60,7 +60,7 @@ Alarms can be created and notifications, such as email, can be sent when alarms 
 Support for complex event processing and logging is in progress.
 Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.</p>
 
-<h5 id="who-is-involved:6083a88ee3411b0d17ce02d738f69d47">Who is involved?</h5>
+<h5 id="who-is-involved:6083a88ee3411b0d17ce02d738f69d47">who is involved?</h5>
 
 <p>The members of the Monasca team are primarily composed of companies, organizations and individuals involved in development and deployment of OpenStack.
 Monasca is in the process of applying for <a href="http://www.openstack.org/">OpenStack</a> governance.
@@ -77,33 +77,34 @@ Currently, Monasca is hosted in Github under the Stackforge organization, and wi
 <li>Rackspace</li>
 </ul>
 
-<h5 id="technologies:6083a88ee3411b0d17ce02d738f69d47">Technologies</h5>
+<h5 id="technologies:6083a88ee3411b0d17ce02d738f69d47">technologies</h5>
 
 <p>Monasca is written in both Java and Python. Several of the components in Monasca started out in Java. However, the go-forward language for Monasca is Python.</p>
 
 <p>Monasca is built on several open-source technologies including:</p>
 
 <ul>
-<li><a href="http://stacktach.com/">StackTach.v3</a> Real-time event stream processing system. StackTach.v3 is used in the Monasca Event processing system that is under development.</li>
-<li><a href="http://kafka.apache.org/">Apache Kafka</a> A high-throughput distributed messaging system. Kafka is a central component in Monasca and provides the infranstructure for all internal communications between components.</li>
-<li><a href="https://storm.apache.org/">Apache Storm</a> Apache Storm is a free and open source distributed realtime computation system. Apache Storm is used in the Monasca Threshold Engine.</li>
-<li><a href="https://zookeeper.apache.org/">Apache ZooKeeper</a> Apache ZooKeeper is is by Kafka and Storm.</li>
-<li><a href="https://influxdb.com/">InfluxDB</a> An open-source distributed time series database with no external dependencies. InfluxDB is one of the supported databases for storing metrics and alarm history.</li>
-<li><a href="https://www.mysql.com/">MySQL</a> MySQL is a freely available open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). SQL is the most popular language for adding, accessing and managing content in a database. It is most noted for its quick processing, proven reliability, ease and flexibility of use. MySQL is one of the supported databases for the Monasca Config Database.</li>
-<li><a href="http://grafana.org">Grafana</a> is an open source, feature rich metrics dashboard and graph editor. Support for Monasca as a data source in Grafana has been added.</li>
+<li><a href="http://openstack.org">OpenStack</a>: Monasca uses the <a href="http://docs.openstack.org/developer/keystone/">Keystone</a> OpenStack Identity Service for authentication, authorization and multi-tenancy. Monasca is also in the process of integrating with several other OpenStack services such as <a href="http://docs.openstack.org/developer/heat/">Heat</a> for auto-scaling and <a href="http://docs.openstack.org/developer/ceilometer/">Ceilometer</a> for monitoring OpenStack resources. Integrations with additional OpenStack services will be targeted in the future.</li>
+<li><a href="http://stacktach.com/">StackTach.v3</a>: A real-time event stream processing system. StackTach.v3 is used in the Monasca Event processing system that is under development.</li>
+<li><a href="http://kafka.apache.org/">Apache Kafka</a>: A high-throughput distributed messaging system. Kafka is a central component in Monasca and provides the infranstructure for all internal communications between components.</li>
+<li><a href="https://storm.apache.org/">Apache Storm</a>: A free and open source distributed realtime computation system. Apache Storm is used in the Monasca Threshold Engine.</li>
+<li><a href="https://zookeeper.apache.org/">Apache ZooKeeper</a>: Used by Kafka and Storm.</li>
+<li><a href="https://influxdb.com/">InfluxDB</a>: An open-source distributed time series database with no external dependencies. InfluxDB is one of the supported databases for storing metrics and alarm history.</li>
+<li><a href="https://www.mysql.com/">MySQL</a>: A freely available open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). SQL is the most popular language for adding, accessing and managing content in a database. It is most noted for its quick processing, proven reliability, ease and flexibility of use. MySQL is one of the supported databases for the Monasca Config Database.</li>
+<li><a href="http://grafana.org">Grafana</a>: An open source, feature rich metrics dashboard and graph editor. Support for Monasca as a data source in Grafana has been added.</li>
 </ul>
 
 <p>In addition, Monasca optionally supports the following:</p>
 
 <ul>
-<li><a href="http://www.vertica.com/">HP Vertica</a> HP Vertica delivers the most advanced SQL analytics as a standards-based relational database with full support for SQL, JDBC, and ODBC. Vertica is one of the supported databases for storing metrics and alarm history within Monasca.</li>
+<li><a href="http://www.vertica.com/">HP Vertica</a>: HP Vertica delivers the most advanced SQL analytics as a standards-based relational database with full support for SQL, JDBC, and ODBC. Vertica is one of the supported databases for storing metrics and alarm history within Monasca.</li>
 </ul>
 
-<h5 id="licensing:6083a88ee3411b0d17ce02d738f69d47">Licensing</h5>
+<h5 id="licensing:6083a88ee3411b0d17ce02d738f69d47">licensing</h5>
 
-<p>All code has been developed under an Apache 2.0 license and has no restrictions on distribution or deployment.</p>
+<p>Monasca has been developed under an <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license</a> and has no restrictions on distribution or deployment.</p>
 
-<h5 id="acknowledgments:6083a88ee3411b0d17ce02d738f69d47">Acknowledgments</h5>
+<h5 id="acknowledgments:6083a88ee3411b0d17ce02d738f69d47">acknowledgments</h5>
 
 <p>Monasca uses the <a href="https://www.yourkit.com/">YourKit Java Profiler</a> for Java development and performance analysis.</p>
 
