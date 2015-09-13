@@ -90,7 +90,7 @@ All of the major components are linked using &lt;a href=&#34;https://kafka.apach
 Every component in the system is built with High Availability (HA) in mind and can be scaled either horizontally or vertically to allow for monitoring of very large systems.
 &lt;img src=&#34;http://monasca.io/img/architecture/metrics-architecture.png&#34; alt=&#34;Monasca Metrics Architecture&#34; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;metrics-alarm-flow:1bf455b3a3c6e1e40be41ef6023b75eb&#34;&gt;Metrics/Alarm Flow&lt;/h4&gt;
+&lt;h4 id=&#34;metrics:1bf455b3a3c6e1e40be41ef6023b75eb&#34;&gt;metrics&lt;/h4&gt;
 
 &lt;p&gt;The &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt; is the gateway for all interaction with Monasca. In a typical scenario &lt;a href=&#34;http://monasca.io/components/metrics&#34;&gt;metrics&lt;/a&gt;
 are collected by the &lt;a href=&#34;http://monasca.io/components/agent/&#34;&gt;Monasca Agent&lt;/a&gt; running on a system and sent to the Monasca API. The API then published the metrics to the Kafka queue.
@@ -99,16 +99,18 @@ From here the &lt;a href=&#34;http://monasca.io/components/persister/&#34;&gt;Mo
 
 &lt;p&gt;At this point the metrics are in our system and can be be queried using the Monasca API, either directly or through one of our other components, such as the Horizon plugin or the &lt;a href=&#34;http://monasca.io/components/cli&#34;&gt;Monasca CLI&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;When the Threshold Engine evaluates the metrics against the alarms it can create alarm state transition events. These are published back to Kafka
-and are read by both the persister and &lt;a href=&#34;http://monasca.io/components/notifications/&#34;&gt;Notification Engine&lt;/a&gt;. The persister simply writes the alarm transitions to the
-DB for future retrieval. The notification engine will send a notification of the configured type for appropriate state transitions.&lt;/p&gt;
+&lt;p&gt;When the Threshold Engine evaluates the metrics against the alarms it can create alarm state transition events.
+These are published back to Kafka and are read by both the persister and &lt;a href=&#34;http://monasca.io/components/notifications/&#34;&gt;Notification Engine&lt;/a&gt;.
+The Persister writes the alarm transitions to the DB for future retrieval.
+The notification engine will send a notification of the configured type for appropriate state transitions.&lt;/p&gt;
 
-&lt;p&gt;In addition to the components discussed above we also have a configuration database used for storing information such as alarm definitions and
-notification methods. This db can be either mysql or postgresql.&lt;/p&gt;
+&lt;p&gt;In addition to the components discussed above we also have a configuration database used for storing information such as alarm definitions and notification methods.
+This database can be either MySQL or PostgreSQL.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Future Components&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;complex-event-processing-cep:1bf455b3a3c6e1e40be41ef6023b75eb&#34;&gt;complex event processing (CEP)&lt;/h4&gt;
 
-&lt;p&gt;Support for Complex Event Processing (CEP) and Logging is in process. There are three additional components that will be added for events processing:&lt;/p&gt;
+&lt;p&gt;Support for Complex Event Processing (CEP) is in process.
+There are three additional components that will be added for events processing:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;monasca-events-api&lt;/li&gt;
@@ -116,19 +118,32 @@ notification methods. This db can be either mysql or postgresql.&lt;/p&gt;
 &lt;li&gt;monasca-events-engine&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Similarly, for log processing, there are several components being added:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://monasca.io/img/architecture/events-architecture.png&#34; alt=&#34;Monasca Log Architecture&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;log-processing:1bf455b3a3c6e1e40be41ef6023b75eb&#34;&gt;log processing&lt;/h4&gt;
+
+&lt;p&gt;Support for Log processing is in progress and includes the following components:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;monasca-log-api&lt;/li&gt;
-&lt;li&gt;monasca-log-transform&lt;/li&gt;
-&lt;li&gt;monasca-log-persister&lt;/li&gt;
+&lt;li&gt;Monasca Log API (monasca-log-api)&lt;/li&gt;
+&lt;li&gt;Monasca Log Parser (monasca-log-parser)&lt;/li&gt;
+&lt;li&gt;Monasca Log Persister (monasca-log-persister)&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://monasca.io/img/architecture/log-architecture.png&#34; alt=&#34;Monasca Log Architecture&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://monasca.io/img/architecture/metrics-log-architecture.png&#34; alt=&#34;Monasca Log Architecture&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;combined-architecture:1bf455b3a3c6e1e40be41ef6023b75eb&#34;&gt;combined architecture&lt;/h4&gt;
 
-&lt;p&gt;In addition, a proof-of-concept has been started for an anomaly detection engine.&lt;/p&gt;
+&lt;p&gt;One of the goals of Monasca is to provide a single unified service for metrics, events and log processing.
+The overall combined Monasca architecture can be shown as:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://monasca.io/img/architecture/combined-architecture.png&#34; alt=&#34;Monasca Log Architecture&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;future-extensions:1bf455b3a3c6e1e40be41ef6023b75eb&#34;&gt;future extensions&lt;/h4&gt;
+
+&lt;p&gt;In addition, to the event and log processing systems a proof-of-concept had been developed for anomaly detection and metrics transform and aggregation engine.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://monasca.io/img/architecture/architecture.png&#34; alt=&#34;Monasca Log Architecture&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -17,15 +17,15 @@
       
       <guid>http://monasca.io/components/agent/</guid>
       <description>&lt;p&gt;Monasca supports an optional monitoring &lt;a href=&#34;https://github.com/stackforge/monasca-agent&#34;&gt;agent&lt;/a&gt; that is written in Python.
-The agent is a python program that runs on systems and runs various checks then sends the data on to the &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt;.
-Checks the agent can run include:&lt;/p&gt;
+The Agent is a Python program that runs on systems and runs various checks then sends the data on to the &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt;.
+Checks the Agent can run include:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;System metrics: cpu, memory, network, disk and file-system utilization.&lt;/li&gt;
-&lt;li&gt;Service metrics: The agent supports many plugins such as MySQL, RabbitMQ, Kafka, and many others.&lt;/li&gt;
-&lt;li&gt;Statsd: statsd metrics can be sent locally to the agent which will format and send on to the Monasca API.&lt;/li&gt;
-&lt;li&gt;Nagios: The Monasca Agent can run any Nagios check and convert the results to a metric and send to the Monasca API. Status code and messages are sent as &amp;lsquo;value_meta&amp;rdquo; in the metric.&lt;/li&gt;
-&lt;li&gt;Check_mk: Similar to Nagios checks the agent can run check_mk checks.&lt;/li&gt;
+&lt;li&gt;Service metrics: The agent supports plugins such as MySQL, RabbitMQ, Kafka, and many others.&lt;/li&gt;
+&lt;li&gt;Statsd: Statsd metrics can be sent locally to the agent which will format and send on to the Monasca API.&lt;/li&gt;
+&lt;li&gt;Nagios: The Agent can run any Nagios check and convert the results to a metric and send to the Monasca API. Status code and messages are sent as &amp;lsquo;value_meta&amp;rdquo; in the metric.&lt;/li&gt;
+&lt;li&gt;Check_mk: Similar to Nagios checks the Agent can run check_mk checks.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;More details on the Agent can be found at these pages:&lt;/p&gt;
