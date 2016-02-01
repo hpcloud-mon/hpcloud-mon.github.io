@@ -83,34 +83,6 @@ is added to Kafka so other processes can consume this event.&lt;/p&gt;
     </item>
     
     <item>
-      <title></title>
-      <link>http://monasca.io/components/cli/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://monasca.io/components/cli/</guid>
-      <description>&lt;p&gt;++
-Categories = [&amp;ldquo;components&amp;rdquo;]
-date = &amp;ldquo;2015-08-19T15:19:37-06:00&amp;rdquo;
-title = &amp;ldquo;cli&amp;rdquo;
-weight = 10&lt;/p&gt;
-
-&lt;p&gt;+++&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/openstack/python-monascaclient&#34;&gt;python-monascaclient&lt;/a&gt; is the Monasca CLI built in the same style as other OpenStack CLI&amp;rsquo;s.
-The CLI provides commands for a full range of &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt; methods.&lt;/p&gt;
-
-&lt;p&gt;Like most OpenStack CLI&amp;rsquo;s all that is needed to run it a keystone user, password and endpoint. These can be specified as arguments or using the standard
-environment variables.&lt;/p&gt;
-
-&lt;p&gt;In addition it can be used as a python module to provide a standard python interface for interacting with the &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt;.
-It is used in this way by the &lt;a href=&#34;http://monasca.io/components/agent/&#34;&gt;Monasca Agent&lt;/a&gt; and so is installed wherever the agent is installed.&lt;/p&gt;
-
-&lt;p&gt;Run the CLI with &lt;code&gt;-h&lt;/code&gt; or refer to the &lt;a href=&#34;https://github.com/openstack/python-monascaclient/blob/master/README.rst&#34;&gt;README&lt;/a&gt; for more
-details on using the Monasca CLI.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>api</title>
       <link>http://monasca.io/components/api/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
@@ -216,6 +188,26 @@ be done reliably at high speed with HA.&lt;/p&gt;
 
 &lt;p&gt;Multiple persisters can run simultaneously utilizing different partitions within a Kafka topic to share the
 load between all instances. As instances drop off or come up the load is rebalanced between all available persisters.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>cli</title>
+      <link>http://monasca.io/components/cli/</link>
+      <pubDate>Wed, 19 Aug 2015 15:19:37 -0600</pubDate>
+      
+      <guid>http://monasca.io/components/cli/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/openstack/python-monascaclient&#34;&gt;python-monascaclient&lt;/a&gt; is the Monasca CLI built in the same style as other OpenStack CLI&amp;rsquo;s.
+The CLI provides commands for a full range of &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt; methods.&lt;/p&gt;
+
+&lt;p&gt;Like most OpenStack CLI&amp;rsquo;s all that is needed to run it a keystone user, password and endpoint. These can be specified as arguments or using the standard
+environment variables.&lt;/p&gt;
+
+&lt;p&gt;In addition it can be used as a python module to provide a standard python interface for interacting with the &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt;.
+It is used in this way by the &lt;a href=&#34;http://monasca.io/components/agent/&#34;&gt;Monasca Agent&lt;/a&gt; and so is installed wherever the agent is installed.&lt;/p&gt;
+
+&lt;p&gt;Run the CLI with &lt;code&gt;-h&lt;/code&gt; or refer to the &lt;a href=&#34;https://github.com/openstack/python-monascaclient/blob/master/README.rst&#34;&gt;README&lt;/a&gt; for more
+details on using the Monasca CLI.&lt;/p&gt;
 </description>
     </item>
     
