@@ -33,7 +33,7 @@ runs through the standard &lt;a href=&#34;http://docs.openstack.org/infra/system
       <guid>http://monasca.io/dev/vagrant/</guid>
       <description>&lt;p&gt;The Monasca team has built a &lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;Vagrant&lt;/a&gt; based development environment which is especially helpful for any development
 on the server stack of Monasca. This environment and extensive instructions on running it are found at the github repo
-&lt;a href=&#34;https://github.com/stackforge/monasca-vagrant&#34;&gt;monasca-vagrant&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://github.com/openstack/monasca-vagrant&#34;&gt;monasca-vagrant&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The environment installs the latest Monasca code and all dependencies into two VMs. You can then turn off components as needed for development. There are some
 limitations to this environment, most notably it is a non-HA environment and initial downloads can take awhile.&lt;/p&gt;

@@ -60,7 +60,7 @@
 are highly performant. Most notably our use of <a href="https://kafka.apache.org/">Kafka</a>, the <a href="/components/persister/">Monasca persister</a> and our use of
 a dedicated <a href="/components/metrics_db/">metrics DB</a>.</li>
 <li>Our system can dynamically handle infrastructure changes. There is no need to pre-register metrics before submitting,
-<a href="https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms">alarm definitions</a> provide dynamic alarm
+<a href="https://github.com/openstack/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms">alarm definitions</a> provide dynamic alarm
 creation based on the metrics being received and dimensions in our <a href="/components/metrics">metrics</a> provide a rich way to identify components and infrastructure.</li>
 <li>Monasca is Multi-tenant and authenticated. Metrics are submitted and authenticated using <a href="http://docs.openstack.org/developer/keystone/">Keystone</a>
 and stored associated with a tenant ID. This enables not only Operator monitoring but also Monitoring as a Service use cases.</li>

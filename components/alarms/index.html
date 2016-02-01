@@ -53,10 +53,10 @@
         <div class="card-panel">
           <h4>alarms</h4>
           <p><p>Included as part of Monasca is a real-time in-memory streaming thresholding engine capable of processing hundreds of thousands of metrics.<br />
-The <a href="https://github.com/stackforge/monasca-thresh">threshold engine</a> is based on <a href="http://storm.apache.org/">Apache Storm</a> and written in Java.</p>
+The <a href="https://github.com/openstack/monasca-thresh">threshold engine</a> is based on <a href="http://storm.apache.org/">Apache Storm</a> and written in Java.</p>
 
 <p>As metrics come into our system they are read from Kafka by the threshold engine then evaluated against any configured
-<a href="https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms">alarm definitions</a>. Alarms are created
+<a href="https://github.com/openstack/monasca-api/docs/monasca-api-spec.md#alarm-definitions-and-alarms">alarm definitions</a>. Alarms are created
 automatically, evaluated and sent to the proper state as metrics flow through the system. When any alarm changes state an alarm-state-transition message
 is added to Kafka so other processes can consume this event.</p>
 </p>

@@ -17,10 +17,10 @@
       
       <guid>http://monasca.io/components/alarms/</guid>
       <description>&lt;p&gt;Included as part of Monasca is a real-time in-memory streaming thresholding engine capable of processing hundreds of thousands of metrics.&lt;br /&gt;
-The &lt;a href=&#34;https://github.com/stackforge/monasca-thresh&#34;&gt;threshold engine&lt;/a&gt; is based on &lt;a href=&#34;http://storm.apache.org/&#34;&gt;Apache Storm&lt;/a&gt; and written in Java.&lt;/p&gt;
+The &lt;a href=&#34;https://github.com/openstack/monasca-thresh&#34;&gt;threshold engine&lt;/a&gt; is based on &lt;a href=&#34;http://storm.apache.org/&#34;&gt;Apache Storm&lt;/a&gt; and written in Java.&lt;/p&gt;
 
 &lt;p&gt;As metrics come into our system they are read from Kafka by the threshold engine then evaluated against any configured
-&lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms&#34;&gt;alarm definitions&lt;/a&gt;. Alarms are created
+&lt;a href=&#34;https://github.com/openstack/monasca-api/docs/monasca-api-spec.md#alarm-definitions-and-alarms&#34;&gt;alarm definitions&lt;/a&gt;. Alarms are created
 automatically, evaluated and sent to the proper state as metrics flow through the system. When any alarm changes state an alarm-state-transition message
 is added to Kafka so other processes can consume this event.&lt;/p&gt;
 </description>
@@ -78,7 +78,35 @@ is added to Kafka so other processes can consume this event.&lt;/p&gt;
     }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://monasca.io/components/agent/&#34;&gt;Agent&lt;/a&gt; documentation has more information on &lt;a href=&#34;https://github.com/stackforge/monasca-agent/blob/master/docs/MonascaMetrics.md&#34;&gt;metrics.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;http://monasca.io/components/agent/&#34;&gt;Agent&lt;/a&gt; documentation has more information on &lt;a href=&#34;https://github.com/openstack/monasca-agent/blob/master/docs/MonascaMetrics.md&#34;&gt;metrics.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://monasca.io/components/cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://monasca.io/components/cli/</guid>
+      <description>&lt;p&gt;++
+Categories = [&amp;ldquo;components&amp;rdquo;]
+date = &amp;ldquo;2015-08-19T15:19:37-06:00&amp;rdquo;
+title = &amp;ldquo;cli&amp;rdquo;
+weight = 10&lt;/p&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/openstack/python-monascaclient&#34;&gt;python-monascaclient&lt;/a&gt; is the Monasca CLI built in the same style as other OpenStack CLI&amp;rsquo;s.
+The CLI provides commands for a full range of &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt; methods.&lt;/p&gt;
+
+&lt;p&gt;Like most OpenStack CLI&amp;rsquo;s all that is needed to run it a keystone user, password and endpoint. These can be specified as arguments or using the standard
+environment variables.&lt;/p&gt;
+
+&lt;p&gt;In addition it can be used as a python module to provide a standard python interface for interacting with the &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt;.
+It is used in this way by the &lt;a href=&#34;http://monasca.io/components/agent/&#34;&gt;Monasca Agent&lt;/a&gt; and so is installed wherever the agent is installed.&lt;/p&gt;
+
+&lt;p&gt;Run the CLI with &lt;code&gt;-h&lt;/code&gt; or refer to the &lt;a href=&#34;https://github.com/openstack/python-monascaclient/blob/master/README.rst&#34;&gt;README&lt;/a&gt; for more
+details on using the Monasca CLI.&lt;/p&gt;
 </description>
     </item>
     
@@ -88,7 +116,7 @@ is added to Kafka so other processes can consume this event.&lt;/p&gt;
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
       <guid>http://monasca.io/components/api/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;https://github.com/stackforge/monasca-api/&#34;&gt;Monasca API&lt;/a&gt; is built on a first-class RESTful API that provides authentication and multi-tenancy.  Monasca integrates with the OpenStack Keystone Identity service.&lt;/p&gt;
+      <description>&lt;p&gt;The &lt;a href=&#34;https://github.com/openstack/monasca-api/&#34;&gt;Monasca API&lt;/a&gt; is built on a first-class RESTful API that provides authentication and multi-tenancy.  Monasca integrates with the OpenStack Keystone Identity service.&lt;/p&gt;
 
 &lt;p&gt;Monasca supports the following main resources in the API:&lt;/p&gt;
 
@@ -104,7 +132,7 @@ is added to Kafka so other processes can consume this event.&lt;/p&gt;
 &lt;li&gt;GET, POST, PUT, DELETE /v2.0/notification-methods: Operations for working with notification methods.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Refer to the &lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md&#34;&gt;full API spec&lt;/a&gt; for more info.&lt;/p&gt;
+&lt;p&gt;Refer to the &lt;a href=&#34;https://github.com/openstack/monasca-api/blob/master/docs/monasca-api-spec.md&#34;&gt;full API spec&lt;/a&gt; for more info.&lt;/p&gt;
 </description>
     </item>
     
@@ -115,9 +143,9 @@ is added to Kafka so other processes can consume this event.&lt;/p&gt;
       
       <guid>http://monasca.io/components/notifications/</guid>
       <description>&lt;p&gt;Notifications can be sent when alarm state transition occurs.  Monasca supports an integrated
-&lt;a href=&#34;https://github.com/stackforge/monasca-notification&#34;&gt;notification engine&lt;/a&gt; that can send various notification types.
-&lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms&#34;&gt;Alarm Definitions&lt;/a&gt; can be associated
-with &lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#notification-methods&#34;&gt;notification methods&lt;/a&gt; for
+&lt;a href=&#34;https://github.com/openstack/monasca-notification&#34;&gt;notification engine&lt;/a&gt; that can send various notification types.
+&lt;a href=&#34;https://github.com/openstack/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms&#34;&gt;Alarm Definitions&lt;/a&gt; can be associated
+with &lt;a href=&#34;https://github.com/openstack/monasca-api/blob/master/docs/monasca-api-spec.md#notification-methods&#34;&gt;notification methods&lt;/a&gt; for
 transitions to the states, OK, Alarm or Undetermined.&lt;/p&gt;
 
 &lt;p&gt;Notification methods of the following types are supported:&lt;/p&gt;
@@ -136,7 +164,7 @@ transitions to the states, OK, Alarm or Undetermined.&lt;/p&gt;
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
       
       <guid>http://monasca.io/components/agent/</guid>
-      <description>&lt;p&gt;Monasca supports an optional monitoring &lt;a href=&#34;https://github.com/stackforge/monasca-agent&#34;&gt;agent&lt;/a&gt; that is written in Python.
+      <description>&lt;p&gt;Monasca supports an optional monitoring &lt;a href=&#34;https://github.com/openstack/monasca-agent&#34;&gt;agent&lt;/a&gt; that is written in Python.
 The Agent is a Python program that runs on systems and runs various checks then sends the data on to the &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt;.
 Checks the Agent can run include:&lt;/p&gt;
 
@@ -151,10 +179,10 @@ Checks the Agent can run include:&lt;/p&gt;
 &lt;p&gt;More details on the Agent can be found at these pages:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/stackforge/monasca-agent/blob/master/docs/Agent.md&#34;&gt;Architecture and Installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/stackforge/monasca-agent/blob/master/docs/Plugins.md&#34;&gt;Agent Plugins&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/stackforge/monasca-agent/blob/master/docs/Customizations.md&#34;&gt;Customizing the Agent&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/stackforge/monasca-agent/blob/master/docs/MonascaMetrics.md&#34;&gt;Metrics and the Agent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/openstack/monasca-agent/blob/master/docs/Agent.md&#34;&gt;Architecture and Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/openstack/monasca-agent/blob/master/docs/Plugins.md&#34;&gt;Agent Plugins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/openstack/monasca-agent/blob/master/docs/Customizations.md&#34;&gt;Customizing the Agent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/openstack/monasca-agent/blob/master/docs/MonascaMetrics.md&#34;&gt;Metrics and the Agent&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -182,32 +210,12 @@ use either database.&lt;/p&gt;
       <pubDate>Wed, 19 Aug 2015 15:23:05 -0600</pubDate>
       
       <guid>http://monasca.io/components/persister/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;https://github.com/stackforge/monasca-persister&#34;&gt;Monasca persister&lt;/a&gt; is responsible for reading metrics and alarm state transitions from
+      <description>&lt;p&gt;The &lt;a href=&#34;https://github.com/openstack/monasca-persister&#34;&gt;Monasca persister&lt;/a&gt; is responsible for reading metrics and alarm state transitions from
 &lt;a href=&#34;https://kafka.apache.org/&#34;&gt;Kafka&lt;/a&gt; and writing to the &lt;a href=&#34;http://monasca.io/components/metrics_db/&#34;&gt;metrics DB&lt;/a&gt;. Though this is a relatively simple task it must
 be done reliably at high speed with HA.&lt;/p&gt;
 
 &lt;p&gt;Multiple persisters can run simultaneously utilizing different partitions within a Kafka topic to share the
 load between all instances. As instances drop off or come up the load is rebalanced between all available persisters.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>cli</title>
-      <link>http://monasca.io/components/cli/</link>
-      <pubDate>Wed, 19 Aug 2015 15:19:37 -0600</pubDate>
-      
-      <guid>http://monasca.io/components/cli/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/stackforge/python-monascaclient&#34;&gt;python-monascaclient&lt;/a&gt; is the Monasca CLI built in the same style as other OpenStack CLI&amp;rsquo;s.
-The CLI provides commands for a full range of &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt; methods.&lt;/p&gt;
-
-&lt;p&gt;Like most OpenStack CLI&amp;rsquo;s all that is needed to run it a keystone user, password and endpoint. These can be specified as arguments or using the standard
-environment variables.&lt;/p&gt;
-
-&lt;p&gt;In addition it can be used as a python module to provide a standard python interface for interacting with the &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt;.
-It is used in this way by the &lt;a href=&#34;http://monasca.io/components/agent/&#34;&gt;Monasca Agent&lt;/a&gt; and so is installed wherever the agent is installed.&lt;/p&gt;
-
-&lt;p&gt;Run the CLI with &lt;code&gt;-h&lt;/code&gt; or refer to the &lt;a href=&#34;https://github.com/stackforge/python-monascaclient/blob/master/README.rst&#34;&gt;README&lt;/a&gt; for more
-details on using the Monasca CLI.&lt;/p&gt;
 </description>
     </item>
     

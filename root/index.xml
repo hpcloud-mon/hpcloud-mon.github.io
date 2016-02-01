@@ -88,7 +88,7 @@ Monasca builds an extensible platform for advanced monitoring services that can 
 are highly performant. Most notably our use of &lt;a href=&#34;https://kafka.apache.org/&#34;&gt;Kafka&lt;/a&gt;, the &lt;a href=&#34;http://monasca.io/components/persister/&#34;&gt;Monasca persister&lt;/a&gt; and our use of
 a dedicated &lt;a href=&#34;http://monasca.io/components/metrics_db/&#34;&gt;metrics DB&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Our system can dynamically handle infrastructure changes. There is no need to pre-register metrics before submitting,
-&lt;a href=&#34;https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms&#34;&gt;alarm definitions&lt;/a&gt; provide dynamic alarm
+&lt;a href=&#34;https://github.com/openstack/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms&#34;&gt;alarm definitions&lt;/a&gt; provide dynamic alarm
 creation based on the metrics being received and dimensions in our &lt;a href=&#34;http://monasca.io/components/metrics&#34;&gt;metrics&lt;/a&gt; provide a rich way to identify components and infrastructure.&lt;/li&gt;
 &lt;li&gt;Monasca is Multi-tenant and authenticated. Metrics are submitted and authenticated using &lt;a href=&#34;http://docs.openstack.org/developer/keystone/&#34;&gt;Keystone&lt;/a&gt;
 and stored associated with a tenant ID. This enables not only Operator monitoring but also Monitoring as a Service use cases.&lt;/li&gt;
