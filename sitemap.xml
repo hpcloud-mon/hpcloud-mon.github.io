@@ -8,12 +8,12 @@
   </url>
   
   <url>
-    <loc>http://monasca.io/components/alarms/</loc>
+    <loc>http://monasca.io/components/metrics/</loc>
     <lastmod>2015-08-07T18:32:00-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://monasca.io/components/metrics/</loc>
+    <loc>http://monasca.io/components/alarms/</loc>
     <lastmod>2015-08-07T18:32:00-06:00</lastmod>
   </url>
   

@@ -11,22 +11,6 @@
     <atom:link href="http://monasca.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>alarms</title>
-      <link>http://monasca.io/components/alarms/</link>
-      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
-      
-      <guid>http://monasca.io/components/alarms/</guid>
-      <description>&lt;p&gt;Included as part of Monasca is a real-time in-memory streaming thresholding engine capable of processing hundreds of thousands of metrics.&lt;br /&gt;
-The &lt;a href=&#34;https://github.com/openstack/monasca-thresh&#34;&gt;threshold engine&lt;/a&gt; is based on &lt;a href=&#34;http://storm.apache.org/&#34;&gt;Apache Storm&lt;/a&gt; and written in Java.&lt;/p&gt;
-
-&lt;p&gt;As metrics come into our system they are read from Kafka by the threshold engine then evaluated against any configured
-&lt;a href=&#34;https://github.com/openstack/monasca-api/docs/monasca-api-spec.md#alarm-definitions-and-alarms&#34;&gt;alarm definitions&lt;/a&gt;. Alarms are created
-automatically, evaluated and sent to the proper state as metrics flow through the system. When any alarm changes state an alarm-state-transition message
-is added to Kafka so other processes can consume this event.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>metrics</title>
       <link>http://monasca.io/components/metrics/</link>
       <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
@@ -83,6 +67,22 @@ is added to Kafka so other processes can consume this event.&lt;/p&gt;
     </item>
     
     <item>
+      <title>alarms</title>
+      <link>http://monasca.io/components/alarms/</link>
+      <pubDate>Fri, 07 Aug 2015 18:32:00 -0600</pubDate>
+      
+      <guid>http://monasca.io/components/alarms/</guid>
+      <description>&lt;p&gt;Included as part of Monasca is a real-time in-memory streaming thresholding engine capable of processing hundreds of thousands of metrics.&lt;br /&gt;
+The &lt;a href=&#34;https://github.com/openstack/monasca-thresh&#34;&gt;threshold engine&lt;/a&gt; is based on &lt;a href=&#34;http://storm.apache.org/&#34;&gt;Apache Storm&lt;/a&gt; and written in Java.&lt;/p&gt;
+
+&lt;p&gt;As metrics come into our system they are read from Kafka by the threshold engine then evaluated against any configured
+&lt;a href=&#34;https://github.com/openstack/monasca-api/docs/monasca-api-spec.md#alarm-definitions-and-alarms&#34;&gt;alarm definitions&lt;/a&gt;. Alarms are created
+automatically, evaluated and sent to the proper state as metrics flow through the system. When any alarm changes state an alarm-state-transition message
+is added to Kafka so other processes can consume this event.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>http://monasca.io/components/cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -123,6 +123,8 @@ Metrics can be published to the Monasca API, stored and queried.
 Alarms can be created and notifications, such as email, can be sent when alarms transition state.
 Support for complex event processing and logging is in progress.
 Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.&lt;/p&gt;
+
+&lt;p&gt;More information on Monasca, including presentations at prior OpenStack conferences, can be found at the &lt;a href=&#34;https://wiki.openstack.org/wiki/Monasca&#34;&gt;Monasca WIKI&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h5 id=&#34;who-is-involved:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;who is involved?&lt;/h5&gt;
 
