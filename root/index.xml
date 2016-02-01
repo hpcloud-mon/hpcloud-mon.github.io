@@ -18,7 +18,7 @@
       <guid>http://monasca.io/root/about/</guid>
       <description>
 
-&lt;p&gt;Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution.
+&lt;p&gt;Monasca is an OpenStack project that provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution.
 Metrics can be published to the Monasca API, stored and queried.
 Alarms can be created and notifications, such as email, can be sent when alarms transition state.
 Support for complex event processing and logging is in progress.
@@ -26,19 +26,18 @@ Monasca builds an extensible platform for advanced monitoring services that can 
 
 &lt;h5 id=&#34;who-is-involved:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;who is involved?&lt;/h5&gt;
 
-&lt;p&gt;The members of the Monasca team are primarily composed of companies, organizations and individuals involved in development and deployment of OpenStack.
-Monasca is in the process of applying for &lt;a href=&#34;http://www.openstack.org/&#34;&gt;OpenStack&lt;/a&gt; governance.
-Currently, Monasca is hosted in Github under the Stackforge organization, and will move to the OpenStack organization when approved.&lt;/p&gt;
+&lt;p&gt;The members of the Monasca team are primarily composed of companies, organizations and individuals involved in development and deployment of OpenStack.&lt;/p&gt;
 
 &lt;p&gt;Some of the major companies involved with developing and/or deploying Monasca include the following:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Hewlett-Packard&lt;/li&gt;
+&lt;li&gt;Hewlett Packard Enterprise&lt;/li&gt;
 &lt;li&gt;Time Warner Cable (TWC)&lt;/li&gt;
 &lt;li&gt;Fujitsu&lt;/li&gt;
 &lt;li&gt;Cisco&lt;/li&gt;
 &lt;li&gt;Cray&lt;/li&gt;
 &lt;li&gt;Rackspace&lt;/li&gt;
+&lt;li&gt;SAP&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h5 id=&#34;technologies:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;technologies&lt;/h5&gt;
@@ -48,8 +47,7 @@ Currently, Monasca is hosted in Github under the Stackforge organization, and wi
 &lt;p&gt;Monasca is built on several open-source technologies including:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://openstack.org&#34;&gt;OpenStack&lt;/a&gt;: Monasca uses the &lt;a href=&#34;http://docs.openstack.org/developer/keystone/&#34;&gt;Keystone&lt;/a&gt; OpenStack Identity Service for authentication, authorization and multi-tenancy. Monasca is also in the process of integrating with several other OpenStack services such as &lt;a href=&#34;http://docs.openstack.org/developer/heat/&#34;&gt;Heat&lt;/a&gt; for auto-scaling and &lt;a href=&#34;http://docs.openstack.org/developer/ceilometer/&#34;&gt;Ceilometer&lt;/a&gt; for monitoring OpenStack resources. Integrations with additional OpenStack services will be targeted in the future.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://stacktach.com/&#34;&gt;StackTach.v3&lt;/a&gt;: A real-time event stream processing system. StackTach.v3 is used in the Monasca Event processing system that is under development.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openstack.org&#34;&gt;OpenStack&lt;/a&gt;: Monasca uses the &lt;a href=&#34;http://docs.openstack.org/developer/keystone/&#34;&gt;Keystone&lt;/a&gt; OpenStack Identity Service for authentication, authorization and multi-tenancy. Monasca integrates with several other OpenStack services such as &lt;a href=&#34;http://docs.openstack.org/developer/heat/&#34;&gt;Heat&lt;/a&gt; for auto-scaling and &lt;a href=&#34;http://docs.openstack.org/developer/ceilometer/&#34;&gt;Ceilometer&lt;/a&gt; for monitoring OpenStack resources. Integrations with additional OpenStack services will be targeted in the future.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://kafka.apache.org/&#34;&gt;Apache Kafka&lt;/a&gt;: A high-throughput distributed messaging system. Kafka is a central component in Monasca and provides the infranstructure for all internal communications between components.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://storm.apache.org/&#34;&gt;Apache Storm&lt;/a&gt;: A free and open source distributed realtime computation system. Apache Storm is used in the Monasca Threshold Engine.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://zookeeper.apache.org/&#34;&gt;Apache ZooKeeper&lt;/a&gt;: Used by Kafka and Storm.&lt;/li&gt;
@@ -116,16 +114,17 @@ composed of alarm sub-expressions and logical operators.&lt;/li&gt;
 
 &lt;p&gt;Monasca is a highly performant, scalable, fault-tolerant and extensible micro-services messages bus based architecture.
 It uses a REST API for high-speed metrics processing and querying and has a streaming alarm engine and notification engine.
-All of the major components are linked using &lt;a href=&#34;https://kafka.apache.org/&#34;&gt;Kafka&lt;/a&gt;.
+All of the major components communicate using &lt;a href=&#34;https://kafka.apache.org/&#34;&gt;Kafka&lt;/a&gt;.
 Every component in the system is built with High Availability (HA) in mind and can be scaled either horizontally or vertically to allow for monitoring of very large systems.
 &lt;img src=&#34;http://monasca.io/img/architecture/metrics-architecture.png&#34; alt=&#34;Monasca Metrics Architecture&#34; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;metrics:1bf455b3a3c6e1e40be41ef6023b75eb&#34;&gt;metrics&lt;/h4&gt;
 
 &lt;p&gt;The &lt;a href=&#34;http://monasca.io/components/api/&#34;&gt;Monasca API&lt;/a&gt; is the gateway for all interaction with Monasca. In a typical scenario &lt;a href=&#34;http://monasca.io/components/metrics&#34;&gt;metrics&lt;/a&gt;
-are collected by the &lt;a href=&#34;http://monasca.io/components/agent/&#34;&gt;Monasca Agent&lt;/a&gt; running on a system and sent to the Monasca API. The API then published the metrics to the Kafka queue.
-From here the &lt;a href=&#34;http://monasca.io/components/persister/&#34;&gt;Monasca Persister&lt;/a&gt; consumes metrics and writes them to our &lt;a href=&#34;http://monasca.io/components/metrics_db/&#34;&gt;Metrics database&lt;/a&gt;. The
-&lt;a href=&#34;http://monasca.io/components/alarms/&#34;&gt;Monasca Threshold Engine&lt;/a&gt; also consumes the metrics and uses them to evaluate &lt;a href=&#34;http://monasca.io/components/alarms/&#34;&gt;alarms&lt;/a&gt;.&lt;/p&gt;
+are collected by the &lt;a href=&#34;http://monasca.io/components/agent/&#34;&gt;Monasca Agent&lt;/a&gt; running on a system and sent to the Monasca API.
+The API then publishes the metrics to the Kafka queue.
+From here the &lt;a href=&#34;http://monasca.io/components/persister/&#34;&gt;Monasca Persister&lt;/a&gt; consumes metrics and writes them to our &lt;a href=&#34;http://monasca.io/components/metrics_db/&#34;&gt;Metrics database&lt;/a&gt;.
+The &lt;a href=&#34;http://monasca.io/components/alarms/&#34;&gt;Monasca Threshold Engine&lt;/a&gt; also consumes the metrics and uses them to evaluate &lt;a href=&#34;http://monasca.io/components/alarms/&#34;&gt;alarms&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;At this point the metrics are in our system and can be be queried using the Monasca API, either directly or through one of our other components, such as the Horizon plugin or the &lt;a href=&#34;http://monasca.io/components/cli&#34;&gt;Monasca CLI&lt;/a&gt;.&lt;/p&gt;
 
@@ -185,11 +184,11 @@ The overall combined Monasca architecture can be shown as:&lt;/p&gt;
       <guid>http://monasca.io/root/dev/</guid>
       <description>
 
-&lt;p&gt;Monasca is an active project seeking to be a part of the OpenStack community and welcomes new development.&lt;/p&gt;
+&lt;p&gt;Monasca is an active OpenStack project and welcomes new development.&lt;/p&gt;
 
 &lt;h4 id=&#34;openstack-community:9ebf8dc1d918e9d82885a54b6ce06af5&#34;&gt;OpenStack Community&lt;/h4&gt;
 
-&lt;p&gt;We have &lt;a href=&#34;https://review.openstack.org/#/c/213183/&#34;&gt;submitted&lt;/a&gt; to be included into OpenStack and follow OpenStack
+&lt;p&gt;Monasca was formally accepted as an official OpenStack project in November, 2015 (&lt;a href=&#34;https://review.openstack.org/#/c/213183/&#34;&gt;https://review.openstack.org/#/c/213183/&lt;/a&gt;) and follows the OpenStack
 &lt;a href=&#34;https://wiki.openstack.org/wiki/How_To_Contribute&#34;&gt;contribution guidelines&lt;/a&gt; and &lt;a href=&#34;http://docs.openstack.org/developer/hacking/&#34;&gt;code standards&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Our project has a &lt;a href=&#34;https://launchpad.net/monasca&#34;&gt;launchpad site&lt;/a&gt; which is used for bug tracking. The project mailing list is also hosted on launchpad,
@@ -199,7 +198,7 @@ see the &lt;a href=&#34;https://launchpad.net/~monasca&#34;&gt;team page&lt;/a&g
 
 &lt;h4 id=&#34;code-contributions:9ebf8dc1d918e9d82885a54b6ce06af5&#34;&gt;Code Contributions&lt;/h4&gt;
 
-&lt;p&gt;While we await our full inclusion into OpenStack our code is hosted as part of stackforge and can be found &lt;a href=&#34;https://github.com/stackforge?query=monasca&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Monasca is hosted in github in the openstack organization and can be found &lt;a href=&#34;https://github.com/openstack?query=monasca&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&#34;http://monasca.io/dev/vagrant/&#34;&gt;Monasca Vagrant&lt;/a&gt; environment is the primary setup used for development of Monasca. More information on testing Monasca can be found
 at our &lt;a href=&#34;http://monasca.io/dev/testing/&#34;&gt;testing page&lt;/a&gt;&lt;/p&gt;

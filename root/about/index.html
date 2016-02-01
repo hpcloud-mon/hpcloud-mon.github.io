@@ -54,7 +54,7 @@
           <h4>about</h4>
           <p>
 
-<p>Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution.
+<p>Monasca is an OpenStack project that provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution.
 Metrics can be published to the Monasca API, stored and queried.
 Alarms can be created and notifications, such as email, can be sent when alarms transition state.
 Support for complex event processing and logging is in progress.
@@ -62,19 +62,18 @@ Monasca builds an extensible platform for advanced monitoring services that can 
 
 <h5 id="who-is-involved:6083a88ee3411b0d17ce02d738f69d47">who is involved?</h5>
 
-<p>The members of the Monasca team are primarily composed of companies, organizations and individuals involved in development and deployment of OpenStack.
-Monasca is in the process of applying for <a href="http://www.openstack.org/">OpenStack</a> governance.
-Currently, Monasca is hosted in Github under the Stackforge organization, and will move to the OpenStack organization when approved.</p>
+<p>The members of the Monasca team are primarily composed of companies, organizations and individuals involved in development and deployment of OpenStack.</p>
 
 <p>Some of the major companies involved with developing and/or deploying Monasca include the following:</p>
 
 <ul>
-<li>Hewlett-Packard</li>
+<li>Hewlett Packard Enterprise</li>
 <li>Time Warner Cable (TWC)</li>
 <li>Fujitsu</li>
 <li>Cisco</li>
 <li>Cray</li>
 <li>Rackspace</li>
+<li>SAP</li>
 </ul>
 
 <h5 id="technologies:6083a88ee3411b0d17ce02d738f69d47">technologies</h5>
@@ -84,8 +83,7 @@ Currently, Monasca is hosted in Github under the Stackforge organization, and wi
 <p>Monasca is built on several open-source technologies including:</p>
 
 <ul>
-<li><a href="http://openstack.org">OpenStack</a>: Monasca uses the <a href="http://docs.openstack.org/developer/keystone/">Keystone</a> OpenStack Identity Service for authentication, authorization and multi-tenancy. Monasca is also in the process of integrating with several other OpenStack services such as <a href="http://docs.openstack.org/developer/heat/">Heat</a> for auto-scaling and <a href="http://docs.openstack.org/developer/ceilometer/">Ceilometer</a> for monitoring OpenStack resources. Integrations with additional OpenStack services will be targeted in the future.</li>
-<li><a href="http://stacktach.com/">StackTach.v3</a>: A real-time event stream processing system. StackTach.v3 is used in the Monasca Event processing system that is under development.</li>
+<li><a href="http://openstack.org">OpenStack</a>: Monasca uses the <a href="http://docs.openstack.org/developer/keystone/">Keystone</a> OpenStack Identity Service for authentication, authorization and multi-tenancy. Monasca integrates with several other OpenStack services such as <a href="http://docs.openstack.org/developer/heat/">Heat</a> for auto-scaling and <a href="http://docs.openstack.org/developer/ceilometer/">Ceilometer</a> for monitoring OpenStack resources. Integrations with additional OpenStack services will be targeted in the future.</li>
 <li><a href="http://kafka.apache.org/">Apache Kafka</a>: A high-throughput distributed messaging system. Kafka is a central component in Monasca and provides the infranstructure for all internal communications between components.</li>
 <li><a href="https://storm.apache.org/">Apache Storm</a>: A free and open source distributed realtime computation system. Apache Storm is used in the Monasca Threshold Engine.</li>
 <li><a href="https://zookeeper.apache.org/">Apache ZooKeeper</a>: Used by Kafka and Storm.</li>
