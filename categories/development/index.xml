@@ -48,12 +48,8 @@ More information on testing Monasca can be found at the &lt;a href=&#34;http://m
       <pubDate>Wed, 19 Aug 2015 10:20:28 -0600</pubDate>
       
       <guid>http://monasca.io/dev/testing/</guid>
-      <description>&lt;p&gt;As part of OpenStack the primary testing for Monasca is done using the &lt;a href=&#34;https://wiki.openstack.org/wiki/Testing&#34;&gt;OpenStack testing&lt;/a&gt;. Monasca code
-runs through the standard &lt;a href=&#34;http://docs.openstack.org/infra/system-config/&#34;&gt;OpenStack CI&lt;/a&gt;. Additionally work to integrate
-&lt;a href=&#34;https://github.com/hpcloud-mon/monasca-tempest&#34;&gt;Monasca into tempest&lt;/a&gt; is ongoing.&lt;/p&gt;
-
-&lt;p&gt;Some additional test scripts used in our test environment including an experimental CI system is available in the
-&lt;a href=&#34;https://github.com/hpcloud-mon/monasca-ci&#34;&gt;Monasca CI repository&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;As part of OpenStack the primary testing for Monasca is done using the &lt;a href=&#34;https://wiki.openstack.org/wiki/Testing&#34;&gt;OpenStack testing&lt;/a&gt; tools and process.
+Monasca code runs through the standard &lt;a href=&#34;http://docs.openstack.org/infra/system-config/&#34;&gt;OpenStack CI&lt;/a&gt; using the &lt;a href=&#34;https://github.com/openstack/monasca-api/tree/master/devstack&#34;&gt;Monasca DevStack Plugin&lt;/a&gt; and &lt;a href=&#34;https://github.com/openstack/monasca-api/tree/master/monasca_tempest_tests&#34;&gt;Monasca Tempest Tests&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
