@@ -157,7 +157,7 @@ The overall combined Monasca architecture can be shown as:&lt;/p&gt;
       <guid>http://monasca.io/root/dev/</guid>
       <description>
 
-&lt;p&gt;Monasca is an active OpenStack project and welcomes new development.&lt;/p&gt;
+&lt;p&gt;Monasca is an active OpenStack project and welcomes new developers.&lt;/p&gt;
 
 &lt;h4 id=&#34;openstack-community:9ebf8dc1d918e9d82885a54b6ce06af5&#34;&gt;OpenStack Community&lt;/h4&gt;
 
@@ -167,7 +167,7 @@ The overall combined Monasca architecture can be shown as:&lt;/p&gt;
 &lt;p&gt;Our project has a &lt;a href=&#34;https://launchpad.net/monasca&#34;&gt;launchpad site&lt;/a&gt; which is used for bug tracking. The project mailing list is also hosted on launchpad,
 see the &lt;a href=&#34;https://launchpad.net/~monasca&#34;&gt;team page&lt;/a&gt; for details on that.&lt;/p&gt;
 
-&lt;p&gt;Details on the team meetings are found on this &lt;a href=&#34;https://wiki.openstack.org/wiki/Meetings/Monasca&#34;&gt;OpenStack wiki page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Monasca hosts weekly meetings as well as other venues such as mid-cycle meetups and OpenStack Summits. Details on the team meetings can be found at &lt;a href=&#34;http://eavesdrop.openstack.org/#Monasca_Team_Meeting]&#34;&gt;Monasca Weekly Meeting&lt;/a&gt; and the &lt;a href=&#34;https://wiki.openstack.org/wiki/Meetings/Monasca&#34;&gt;Monasca Wiki&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h4 id=&#34;code-contributions:9ebf8dc1d918e9d82885a54b6ce06af5&#34;&gt;Code Contributions&lt;/h4&gt;
 
