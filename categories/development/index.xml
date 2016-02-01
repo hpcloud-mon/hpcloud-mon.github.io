@@ -18,27 +18,27 @@
       <guid>http://monasca.io/root/dev/</guid>
       <description>
 
-&lt;p&gt;Monasca is an active OpenStack project and welcomes new developers.&lt;/p&gt;
+&lt;p&gt;Monasca is an active &lt;a href=&#34;https://www.openstack.org/&#34;&gt;OpenStack&lt;/a&gt; project and welcomes new developers.&lt;/p&gt;
 
 &lt;h4 id=&#34;openstack-community:9ebf8dc1d918e9d82885a54b6ce06af5&#34;&gt;OpenStack Community&lt;/h4&gt;
 
-&lt;p&gt;Monasca was formally accepted as an official OpenStack project in November, 2015 via the &lt;a href=&#34;https://review.openstack.org/#/c/213183/&#34;&gt;OpenStack Governance Review for Monasca&lt;/a&gt; and follows the OpenStack
-&lt;a href=&#34;https://wiki.openstack.org/wiki/How_To_Contribute&#34;&gt;contribution guidelines&lt;/a&gt; and &lt;a href=&#34;http://docs.openstack.org/developer/hacking/&#34;&gt;code standards&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Monasca was formally accepted as an official OpenStack project in November, 2015 during the &lt;a href=&#34;https://review.openstack.org/#/c/213183/&#34;&gt;OpenStack Governance Review for Monasca&lt;/a&gt; and follows the OpenStack &lt;a href=&#34;https://wiki.openstack.org/wiki/How_To_Contribute&#34;&gt;contribution guidelines&lt;/a&gt; and &lt;a href=&#34;http://docs.openstack.org/developer/hacking/&#34;&gt;code standards&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;The Monasca project has a &lt;a href=&#34;https://launchpad.net/monasca&#34;&gt;launchpad site&lt;/a&gt; which is used for bug tracking. The project mailing list is also hosted on launchpad,
-see the &lt;a href=&#34;https://launchpad.net/~monasca&#34;&gt;team page&lt;/a&gt; for details on that.&lt;/p&gt;
+&lt;p&gt;The Monasca project has a &lt;a href=&#34;https://launchpad.net/monasca&#34;&gt;launchpad site&lt;/a&gt; which is primarily used for bug tracking and blueprints.
+The project mailing list is also hosted on launchpad, at the &lt;a href=&#34;https://launchpad.net/~monasca&#34;&gt;Monasca Launchpad Team&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Monasca hosts weekly meetings as well as other venues, such as mid-cycle meetups and OpenStack Summits. Details on the team meetings can be found at &lt;a href=&#34;http://eavesdrop.openstack.org/#Monasca_Team_Meeting&#34;&gt;Monasca Weekly Meeting&lt;/a&gt; and the &lt;a href=&#34;https://wiki.openstack.org/wiki/Meetings/Monasca&#34;&gt;Monasca Wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Monasca hosts weekly meetings in IRC as well as other venues, such as mid-cycle meetups and OpenStack Summits.
+Details on the team meetings can be found at &lt;a href=&#34;http://eavesdrop.openstack.org/#Monasca_Team_Meeting&#34;&gt;Monasca Weekly Meeting&lt;/a&gt; and the &lt;a href=&#34;https://wiki.openstack.org/wiki/Meetings/Monasca&#34;&gt;Monasca Wiki&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h4 id=&#34;code-contributions:9ebf8dc1d918e9d82885a54b6ce06af5&#34;&gt;Code Contributions&lt;/h4&gt;
 
-&lt;p&gt;Monasca is hosted in Github in the &lt;a href=&#34;https://github.com/openstack?query=monasca&#34;&gt;OpenStack organization&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Monasca is hosted in Github by the &lt;a href=&#34;https://github.com/openstack?query=monasca&#34;&gt;Github OpenStack Organization&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;All code is submitted via the &lt;a href=&#34;https://review.openstack.org/#/q/status:open+monasca,n,z&#34;&gt;OpenStack Gerrit Review System&lt;/a&gt; and is under gated tests that include a battery of unit and functional tests using the &lt;a href=&#34;https://github.com/openstack/monasca-api/tree/master/devstack&#34;&gt;Monasca DevStack Plugin&lt;/a&gt; and &lt;a href=&#34;https://github.com/openstack/monasca-api/tree/master/monasca_tempest_tests&#34;&gt;Monasca Tempest Tests&lt;/a&gt; .&lt;/p&gt;
 
-&lt;p&gt;The &lt;a href=&#34;http://monasca.io/dev/vagrant/&#34;&gt;Monasca Vagrant&lt;/a&gt; environment is the primary setup used for development of Monasca.
-The Monasca DevStack environment is also used as a development environment.
-More information on testing Monasca can be found at our &lt;a href=&#34;http://monasca.io/dev/testing/&#34;&gt;testing page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Currently, the &lt;a href=&#34;http://monasca.io/dev/vagrant/&#34;&gt;Monasca Vagrant&lt;/a&gt; environment is the primary development environment for Monasca.
+The &lt;a href=&#34;https://github.com/openstack/monasca-api/tree/master/devstack&#34;&gt;Monasca DevStack Plugin&lt;/a&gt; environment is also used as a development environment.
+More information on testing Monasca can be found at the &lt;a href=&#34;http://monasca.io/dev/testing/&#34;&gt;testing page&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
