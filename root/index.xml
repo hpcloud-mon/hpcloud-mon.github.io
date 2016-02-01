@@ -24,7 +24,7 @@ Alarms can be created and notifications, such as email, can be sent when alarms 
 Support for complex event processing and logging is in progress.
 Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.&lt;/p&gt;
 
-&lt;p&gt;More information on Monasca, including presentations at prior OpenStack conferences, can be found at the &lt;a href=&#34;https://wiki.openstack.org/wiki/Monasca&#34;&gt;Monasca WIKI&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;More information on Monasca, including presentations at prior OpenStack conferences, can be found at the &lt;a href=&#34;https://wiki.openstack.org/wiki/Monasca&#34;&gt;Monasca Wiki&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h5 id=&#34;who-is-involved:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;who is involved?&lt;/h5&gt;
 
@@ -102,7 +102,7 @@ existing Nagios checks and statsd metrics.&lt;/li&gt;
 with other systems.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://monasca.io/components/alarms/&#34;&gt;Thresholding on alarming&lt;/a&gt; on metrics is done real-time with compound alarms described using a simple expressive grammar
 composed of alarm sub-expressions and logical operators.&lt;/li&gt;
-&lt;li&gt;The overall architecture is a micro-services based bus architecture that allows for &lt;a href=&#34;http://monasca.io/root/coming-soon&#34;&gt;easy extensibility&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The overall architecture is a &lt;a href=&#34;http://martinfowler.com/articles/microservices.html&#34;&gt;microservices&lt;/a&gt; &lt;a href=&#34;http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageBus.html&#34;&gt;message bus&lt;/a&gt; architecture that allows for &lt;a href=&#34;http://monasca.io/root/coming-soon&#34;&gt;easy extensibility&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -115,7 +115,7 @@ composed of alarm sub-expressions and logical operators.&lt;/li&gt;
       <guid>http://monasca.io/root/architecture/</guid>
       <description>
 
-&lt;p&gt;Monasca is a highly performant, scalable, fault-tolerant and extensible micro-services messages bus based architecture.
+&lt;p&gt;Monasca is a highly performant, scalable, fault-tolerant and extensible &lt;a href=&#34;http://martinfowler.com/articles/microservices.html&#34;&gt;microservices&lt;/a&gt; &lt;a href=&#34;http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageBus.html&#34;&gt;messages bus&lt;/a&gt; based architecture.
 It uses a REST API for high-speed metrics processing and querying and has a streaming alarm engine and notification engine.
 All of the major components communicate using &lt;a href=&#34;https://kafka.apache.org/&#34;&gt;Kafka&lt;/a&gt;.
 Every component in the system is built with High Availability (HA) in mind and can be scaled either horizontally or vertically to allow for monitoring of very large systems.
@@ -201,7 +201,9 @@ see the &lt;a href=&#34;https://launchpad.net/~monasca&#34;&gt;team page&lt;/a&g
 
 &lt;h4 id=&#34;code-contributions:9ebf8dc1d918e9d82885a54b6ce06af5&#34;&gt;Code Contributions&lt;/h4&gt;
 
-&lt;p&gt;Monasca is hosted in github in the openstack organization and can be found &lt;a href=&#34;https://github.com/openstack?query=monasca&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Monasca is hosted in Github in the OpenStack organization and can be found &lt;a href=&#34;https://github.com/openstack?query=monasca&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;All code is submitted via the &lt;a href=&#34;https://review.openstack.org/#/q/status:open+monasca,n,z&#34;&gt;OpenStack Gerrit Review System&lt;/a&gt; and is under gated tests that include a battery of unit and functional tests using the &lt;a href=&#34;https://github.com/openstack/monasca-api/tree/master/devstack&#34;&gt;Monasca DevStack Plugin&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The &lt;a href=&#34;http://monasca.io/dev/vagrant/&#34;&gt;Monasca Vagrant&lt;/a&gt; environment is the primary setup used for development of Monasca. More information on testing Monasca can be found
 at our &lt;a href=&#34;http://monasca.io/dev/testing/&#34;&gt;testing page&lt;/a&gt;&lt;/p&gt;
