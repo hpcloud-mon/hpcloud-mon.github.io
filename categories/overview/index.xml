@@ -24,7 +24,17 @@ Alarms can be created and notifications, such as email, can be sent when alarms 
 Support for complex event processing and logging is in progress.
 Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.&lt;/p&gt;
 
-&lt;p&gt;More information on Monasca, including presentations at prior OpenStack conferences, can be found at the &lt;a href=&#34;https://wiki.openstack.org/wiki/Monasca&#34;&gt;Monasca Wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;h5 id=&#34;presentations:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;presentations&lt;/h5&gt;
+
+&lt;p&gt;Several overviews of Monasca can be found at the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.openstack.org/summit/tokyo-2015/videos/presentation/congrats-you-stood-up-an-openstack-environment-but-now-they-want-you-to-monitor-it-introducing-using-monasca-for-production-openstack-monitoring&#34;&gt;Introducing Using Monasca for Production OpenStack Monitoring&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.openstack.org/summit/openstack-paris-summit-2014/session-videos/presentation/monasca-deep-dive-monitoring-at-scale&#34;&gt;Monasca Deep Dive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.openstack.org/summit/tokyo-2015/videos/presentation/elk-and-monasca-crossing-logging-as-an-openstack-service&#34;&gt;ELK and Monasca Crossing: Logging as an OpenStack Service&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Additional information on Monasca, including presentations at prior OpenStack conferences, can be found at the &lt;a href=&#34;https://wiki.openstack.org/wiki/Monasca&#34;&gt;Monasca Wiki&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h5 id=&#34;who-is-involved:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;who is involved?&lt;/h5&gt;
 
